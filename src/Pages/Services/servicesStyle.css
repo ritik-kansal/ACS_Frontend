@@ -46,3 +46,30 @@
 .navigationBox{
     margin-top: 80px;
 }
+
+.serviceList{
+    padding-left: 20px;
+}
+
+.serviceList li{
+    color: #fff;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.serviceList li:not(:first-child){
+    margin-top: 10px;
+}
+
+.aboutRight .heading-2{
+    color: #fff;
+}
+
+.navigationBoxWrap{
+    display: none;
+}
+
+.navigationBoxWrap.active{
+    display: block;
+}

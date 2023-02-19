@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Button from '../../Components/Button/Button';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner'
 import './servicesStyle.css';
 
 const Services = () => {
-  return (
+
+    const[active, setActive] = useState(1);
+
+    return (
     <>
         <CommonSubBanner className={'serviceBanner'} heading={'Our Services'} text={'Scale up your business growth with highly robust.'} />
         <section className="serviceWrapper gradientBG">
@@ -25,21 +29,116 @@ const Services = () => {
             <div className="container">
 
                 <div className="navigationWrapper">
-                    <span className="navigationTab active">Application Development & Maintenance</span>
-                    <span className="navigationTab">Quality Assurance & Testing</span>
+                    <span className={`navigationTab ${active === 1 ? 'active' : ''}`} onClick={() => setActive(1)}>Application Development & Maintenance</span>
+                    <span className={`navigationTab ${active === 2 ? 'active' : ''}`} onClick={() => setActive(2)}>Quality Assurance & Testing</span>
                     <span className="navigationTab">Enterprise Mobile Solutions</span>
                     <span className="navigationTab">Database Management</span>
                 </div>
 
-                <div className="navigationBoxWrap">
+                <div className={`navigationBoxWrap ${active === 1 ? 'active' : ''}`}>
 
                     <div className="navigationBox flexBox">
-                        <div className="naviLeft">
 
-                        </div>
-                        <div className="naviRight">
-                            
-                        </div>
+                    <div className="aboutLeft shadowLeft">
+                        <img src="/assets/img/aboutUs.png" alt="" />
+                    </div>
+
+                    <div className="aboutRight">
+                        <h2 className="heading-2">
+                        Application Development & Maintenance
+                        </h2>
+                        
+                        <ul className="serviceList mt-15">
+                            <li>Realize faster time to market</li>
+                            <li>Increase frequency and quality of deployments</li>
+                            <li>Improve solution quality and shorten lead times for fixes</li>
+                            <li>Deliver early and often, and detect errors earlier</li>
+                            <li>Improve innovation and risk-taking by making it safer to experiment</li>
+                            <li>Reduce the severity and frequency of release failures</li>
+                        </ul>
+                        
+                        <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
+                    </div>
+
+                    </div>
+
+                    <div className="navigationBox flexBox">
+
+                    <div className="aboutLeft shadowLeft">
+                        <img src="/assets/img/aboutUs.png" alt="" />
+                    </div>
+
+                    <div className="aboutRight">
+                        <h2 className="heading-2">
+                        Application Development & Maintenance
+                        </h2>
+                        
+                        <ul className="serviceList mt-15">
+                            <li>Realize faster time to market</li>
+                            <li>Increase frequency and quality of deployments</li>
+                            <li>Improve solution quality and shorten lead times for fixes</li>
+                            <li>Deliver early and often, and detect errors earlier</li>
+                            <li>Improve innovation and risk-taking by making it safer to experiment</li>
+                            <li>Reduce the severity and frequency of release failures</li>
+                        </ul>
+                        
+                        <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
+                    </div>
+
+                    </div>
+
+                </div>
+
+                <div className={`navigationBoxWrap ${active === 2 ? 'active' : ''}`}>
+
+                    <div className="navigationBox flexBox">
+
+                    <div className="aboutLeft shadowLeft">
+                        <img src="/assets/img/aboutUs.png" alt="" />
+                    </div>
+
+                    <div className="aboutRight">
+                        <h2 className="heading-2">
+                        Application Development & Maintenance
+                        </h2>
+                        
+                        <ul className="serviceList mt-15">
+                            <li>Realize faster time to market</li>
+                            <li>Increase frequency and quality of deployments</li>
+                            <li>Improve solution quality and shorten lead times for fixes</li>
+                            <li>Deliver early and often, and detect errors earlier</li>
+                            <li>Improve innovation and risk-taking by making it safer to experiment</li>
+                            <li>Reduce the severity and frequency of release failures</li>
+                        </ul>
+                        
+                        <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
+                    </div>
+
+                    </div>
+
+                    <div className="navigationBox flexBox">
+
+                    <div className="aboutLeft shadowLeft">
+                        <img src="/assets/img/aboutUs.png" alt="" />
+                    </div>
+
+                    <div className="aboutRight">
+                        <h2 className="heading-2">
+                        Application Development & Maintenance
+                        </h2>
+                        
+                        <ul className="serviceList mt-15">
+                            <li>Realize faster time to market</li>
+                            <li>Increase frequency and quality of deployments</li>
+                            <li>Improve solution quality and shorten lead times for fixes</li>
+                            <li>Deliver early and often, and detect errors earlier</li>
+                            <li>Improve innovation and risk-taking by making it safer to experiment</li>
+                            <li>Reduce the severity and frequency of release failures</li>
+                        </ul>
+                        
+                        <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
+                    </div>
+
                     </div>
 
                 </div>
