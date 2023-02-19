@@ -20,6 +20,7 @@
     font-size: 20px;
     line-height: 170%;
     color: #F1F1F1;
+    max-width: 600px;
 }
 
 .currentPage{
@@ -41,4 +42,12 @@
 
 .governmentBanner{
     background: url('./governmentBG.png');
+}
+
+.careerBanner{
+    background: url('./carreerBG.png');
+}
+
+.talentBanner{
+    background: url('./careerBannerBG.png');
 }
