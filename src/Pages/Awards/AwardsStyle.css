@@ -1,0 +1,30 @@
+.awardsArticleWrap{
+    color: #fff;
+}
+
+.awardsArticleWrap{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.awardsArticleWrap:not(:last-child){
+    border-bottom: 1px solid #999;
+}
+
+.awardsQuestion{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 150%;
+    position: relative;
+    display: block;
+    color: #FF364C;
+}
+
+.awardsAnswer{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: #FFFFFF;
+    position: relative;
+    display: block;
+}
