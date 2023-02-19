@@ -33,6 +33,7 @@ header{
 .navItem{
     display: block;
     position: relative;
+    cursor: pointer;
 }
 
 .navLink{
@@ -50,4 +51,40 @@ header{
 .navItem.active .navLink{
     background: #FF364C;
     border-radius: 0px 60px 0px 0px;
+}
+
+.dropdown{
+    position: absolute;
+    display: block;
+    width: 230px;
+    background: #fff;
+    bottom: -120px;
+    left: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -99;
+    transition: 0.2s ease-in;
+}
+
+.dropdown.active{
+    visibility: visible;
+    z-index: 9;
+    opacity: 1;
+    transition: 0.2s ease-in;
+}
+
+.dropdown a{
+    padding: 10px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #eee;
+    transition: 0.4s ease-in-out;
+}
+
+.dropdown a:hover{
+    background: #FF364C;
+    color: #fff;
+    transition: 0.4s ease-in-out;
 }

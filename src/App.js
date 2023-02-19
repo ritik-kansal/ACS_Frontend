@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Layouts/Footer/Footer';
 import Header from './Layouts/Header/Header';
+import About from './Pages/About/About';
 import Awards from './Pages/Awards/Awards';
 import Career from './Pages/Career/Career';
 import GetJob from './Pages/Career/GetJob';
@@ -22,6 +23,7 @@ function App() {
         <main>
           <Routes>
             <Route exact path='/' element={<Home />}/>
+            <Route exact path='/about' element={<About />}/>
             <Route exact path='/services' element={<Services />}/>
             <Route exact path='/governmentCertification' element={<GovernmentService />}/>
             <Route exact path='/governmentExperience' element={<GovernmentExperience />}/>
