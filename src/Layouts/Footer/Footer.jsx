@@ -1,9 +1,14 @@
 import React from 'react'
+import { useLocation } from 'react-router';
 import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
+import Textarea from '../../Components/Textarea/Textarea';
 import './FooterStyle.css';
 
 const Footer = () => {
+
+const location = useLocation();
+
   return (
     <footer>
         <div className="container">
@@ -55,6 +60,8 @@ const Footer = () => {
 
                 </div>
 
+                {location.pathname !== "/contact" ? 
+                
                 <div className="topLevelRight">
                     <form action="" className='whiteForm'>
                         
@@ -65,6 +72,23 @@ const Footer = () => {
 
                     </form>
                 </div>
+                
+                :
+
+                <div className="topLevelRight">
+                    <form action="" className='whiteForm'>
+                        
+                        <Input className={'mt-20'} type={'text'} placeholder={'Name'}/>
+                        <Input className={'mt-20'} type={'email'} placeholder={'Email Address'}/>
+                        <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'}/>
+                        <Input className={'mt-20'} type={'text'} placeholder={'Query'}/>
+                        <Textarea className={'mt-20'} placeholder={'Write Message'}/>
+                        <Button className={'HeroButton mt-20'} name={'Submit'} />
+
+                    </form>
+                </div>
+                
+                }
 
             </div>
 

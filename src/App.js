@@ -7,6 +7,7 @@ import Career from './Pages/Career/Career';
 import GetJob from './Pages/Career/GetJob';
 import Partners from './Pages/Career/Partners';
 import Talent from './Pages/Career/Talent';
+import Contact from './Pages/Contact/Contact';
 import GovernmentExperience from './Pages/GovernmentService/GovernmentExperience';
 import GovernmentPlacements from './Pages/GovernmentService/GovernmentPlacements';
 import GovernmentService from './Pages/GovernmentService/GovernmentService';
@@ -31,6 +32,7 @@ function App() {
             <Route exact path='/partner' element={<Partners />}/>
             <Route exact path='/news' element={<News />}/>
             <Route exact path='/awards' element={<Awards />}/>
+            <Route exact path='/contact' element={<Contact />}/>
           </Routes>
         </main>
         <Footer />
