@@ -97,3 +97,30 @@
     text-align: center;
     color: #fff;
 }
+
+.partnerWrapper{
+    color: #fff;
+}
+
+.partnerWrapper .readMore{
+    display: none;
+}
+
+.partnerWrapper .servciceBox{
+    min-height: 245px;
+    align-content: flex-start;
+}
+
+.partnerWrapper .multiLevelFormWrap{
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+.btnWraperCenter{
+    text-align: center;
+    width: 100%;
+}
+
+.btnWraperCenter button{
+    min-width: 470px;
+}

@@ -51,3 +51,19 @@
 .talentBanner{
     background: url('./careerBannerBG.png');
 }
+
+.partnerBG{
+    background: url('./partnerBG.png');
+}
+
+.NewsBG{
+    background: url('./NewsBG.png');
+}
+
+.AwardBG{
+    background: url('./AwardBG.png');
+}
+
+.ContactBG{
+    background: url('./contactBG.png');
+}

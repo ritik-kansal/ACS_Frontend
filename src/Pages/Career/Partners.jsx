@@ -1,19 +1,28 @@
 import React from 'react'
-import Button from '../../Components/Button/Button';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner';
-import Input from '../../Components/Input/Input';
 import './CareerStyle.css';
+import ServiceBox from '../../Components/serviceBox/ServiceBox';
+import Input from '../../Components/Input/Input';
+import Button from '../../Components/Button/Button';
 
-const Talent = () => {
+const Partners = () => {
   return (
     <>
-    <CommonSubBanner currentPage={'Opportunities'} activePage={'Talent Community'} className={'talentBanner'} heading={'Talent Community'} text={'You can join our talent community by filling the form.'} />
-    <div className="talentWrapper gradientBG">
-        <div className="container">
+        <CommonSubBanner currentPage={'Opportunities'} activePage={'Partners'} className={'partnerBG'} heading={'Partners'} text={'You can join us as paartners by filling the form.'} />
+        <section className="gradientBG partnerWrapper">
+            <div className="container">
+
+            <h2 className="heading-3">Benefit from best-in-class capabilities, brought to you by ACS and the most trusted names in technology.</h2>
+
+            <div className="x3BoxWrap mt-60">
+                <ServiceBox src={'/assets/img/settings.png'} text={'Seamless integration keeps it simple'} />
+                <ServiceBox src={'/assets/img/glow.png'} text={'Big ideas call for big thinking'} />
+                <ServiceBox src={'/assets/img/workingUser.png'} text={'The latest in emerging technology'} />
+            </div>
 
             <section className="multiLevelFormWrap">
                 <form action="" className='whiteForm'>
-                <h3 className="heading-4">Join our talent community and we will notify you about relevant positions, and keep you in mind when we have interesting opportunities</h3>
+                <h3 className="heading-4">Let’s connect to find out what the power of our partnerships can do for you.</h3>
                     <Input className={'talentForm'} type={'text'} placeholder={'Name'}/>
                     <Input className={'talentForm'} type={'text'} placeholder={'Name'}/>
                     <Input className={'talentForm'} type={'text'} placeholder={'Name'}/>
@@ -28,10 +37,10 @@ const Talent = () => {
                 </form>
             </section>
 
-        </div>
-    </div>
+            </div>
+        </section>
     </>
   )
 }
 
-export default Talent
+export default Partners
