@@ -1,0 +1,68 @@
+.sliderBox{
+    position: relative;
+}
+
+.siderText{
+    position: absolute;
+    bottom: 200px;
+    left: 160px;
+    max-width: 600px;
+    color: #fff;
+}
+
+.heroText{
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 120%;
+}
+
+.heroDetail{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.sliderBox img{
+    width: 100%;   
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.swiper-button-next{
+    left: auto;
+    right: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+    background: url('./sliderPrev.png');
+    background-size: cover !important;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 74px;
+}
+
+.swiper-button-next::after{
+    background: url('./sliderNext.png');
+}
+
+.swiper-button-disabled{
+    cursor: not-allowed;
+}
+
+section{
+    padding: 100px 0;
+}
