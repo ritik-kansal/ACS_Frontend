@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.swiperMain{
+    max-height: 603px;
+    overflow: hidden;
+}
+
 .siderText{
     position: absolute;
     bottom: 200px;
@@ -65,4 +70,169 @@
 
 section{
     padding: 100px 0;
+}
+
+.gradientBG{
+    background: linear-gradient(180deg, #000000 0%, #757575 100%);
+}
+
+.topDetails{
+    text-align: center;
+    color: #fff;
+}
+
+.commonHeading{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+}
+
+.commonText{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.x3BoxWrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.breakerHeading{
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.breakerBlack{
+    background: #000 url('./ContactusBG.jpg');
+    background-size: cover;
+}
+
+.breakerBlack .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading-2{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+}
+
+.text-2{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.flexBox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutLeft{
+    max-width: 490px;
+    width: 100%;
+    line-height: 0;
+    border-radius: 8px;
+}
+
+.aboutRight{
+    max-width: calc(100% - 550px);
+}
+
+.aboutWrapper{
+    color: #fff;
+}
+
+.aboutWrapper .flexBox{
+    gap: 60px;
+}
+
+.shadowLeft{
+    box-shadow: -8px 8px rgb(255 54 76 / 50%);
+}
+
+.testimonila{
+    background: #000 url('./TestimonialBG.png');
+    background-size: cover;
+}
+
+.testimonialsBox{
+    color: #fff;
+    padding: 40px;
+    background: #444444;
+    box-shadow: 0px 12.3429px 32.9143px rgba(0, 0, 0, 0.12), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12.3429px;
+}
+
+.swiperBox{
+    max-width: 1140px;
+    margin: 0 auto
+}
+
+.testminoal{
+    font-weight: 400;
+    font-size: 24.6857px;
+    line-height: 37px;
+}
+
+.testimonialBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.testiName{
+    font-weight: 600;
+    font-size: 18.46px;
+    line-height: 33px;
+    color: #FF364C;
+}
+
+.textTesti{
+    font-weight: 400;
+    font-size: 14.4px;
+    line-height: 33px;
+}
+
+.commonTable{
+    width: 100%;
+    color: #fff;
+}
+
+.commonTable thead{
+    background: #444444;
+    text-align: left;
+}
+
+.commonTable thead th{
+    padding: 10px 16px;
+}
+
+.commonTable tbody td{
+    padding: 25px 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #999;
+}
+
+.redlink{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-decoration: none;
+    color: #FF364C;
 }
