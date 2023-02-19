@@ -1,11 +1,11 @@
 import React from 'react'
 import './CommonSubBannerStyle.css';
 
-const CommonSubBanner = () => {
+const CommonSubBanner = ({className,heading,text}) => {
   return (
-    <div className="commonBanner" style={`background: url(/assets/img/${BGName})`}>
+    <div className={`commonBanner ${className}`}>
         <div className="container">
-            <h1 className='HeadingBanner'>{heading}</h1>
+            <h1 className='headingBanner'>{heading}</h1>
             <p className="textBanner">{text}</p>
         </div>
     </div>

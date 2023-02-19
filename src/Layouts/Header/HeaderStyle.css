@@ -10,6 +10,12 @@ header{
     width: 100%;
 }
 
+.logoAlign{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .navigationWrap{
     display: flex;
     align-items: center;

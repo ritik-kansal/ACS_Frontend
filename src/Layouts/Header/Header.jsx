@@ -6,7 +6,7 @@ const Header = () => {
     <header>
         <div className="container">
             <nav className="navigationWrap">
-                <a href="/"><img src="/assets/svg/Logo.svg" alt="" /></a>
+                <a href="/" className='logoAlign'><img src="/assets/svg/Logo.svg" alt="" /></a>
                 <ul className="navigation">
                     <li className="navItem active">
                         <a href="/" className="navLink">Home</a>

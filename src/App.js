@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './Layouts/Footer/Footer';
 import Header from './Layouts/Header/Header';
 import Home from './Pages/Home/Home';
+import Services from './Pages/Services/Services';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <main>
           <Routes>
             <Route exact path='/' element={<Home />}/>
+            <Route exact path='/services' element={<Services />}/>
           </Routes>
         </main>
         <Footer />
