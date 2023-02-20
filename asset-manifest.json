@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ACS_Frontend/static/css/main.7705498b.css",
-    "main.js": "/ACS_Frontend/static/js/main.c24b4b86.js",
+    "main.js": "/ACS_Frontend/static/js/main.73a81157.js",
     "static/js/787.0e8c8048.chunk.js": "/ACS_Frontend/static/js/787.0e8c8048.chunk.js",
     "static/media/AboutBG.png": "/ACS_Frontend/static/media/AboutBG.7bcee63ce23f572d251e.png",
     "static/media/governmentBG.png": "/ACS_Frontend/static/media/governmentBG.90479b4a690454bc3e4e.png",
@@ -15,11 +15,11 @@
     "static/media/ContactusBG.jpg": "/ACS_Frontend/static/media/ContactusBG.696a29305c33ca80b88c.jpg",
     "index.html": "/ACS_Frontend/index.html",
     "main.7705498b.css.map": "/ACS_Frontend/static/css/main.7705498b.css.map",
-    "main.c24b4b86.js.map": "/ACS_Frontend/static/js/main.c24b4b86.js.map",
+    "main.73a81157.js.map": "/ACS_Frontend/static/js/main.73a81157.js.map",
     "787.0e8c8048.chunk.js.map": "/ACS_Frontend/static/js/787.0e8c8048.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7705498b.css",
-    "static/js/main.c24b4b86.js"
+    "static/js/main.73a81157.js"
   ]
 }
