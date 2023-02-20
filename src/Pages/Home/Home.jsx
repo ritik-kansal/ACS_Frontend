@@ -19,7 +19,7 @@ const Home = () => {
         >
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="/assets/img/slider1BG.jpg" alt="" />
+              <img src="./assets/img/slider1BG.jpg" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Clients</h1>
                 <p className="heroDetail">
@@ -33,7 +33,7 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="/assets/img/slider1BG.jpg" alt="" />
+              <img src="./assets/img/slider1BG.jpg" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Partners</h1>
                 <p className="heroDetail">
@@ -47,7 +47,7 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="/assets/img/slider1BG.jpg" alt="" />
+              <img src="./assets/img/slider1BG.jpg" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Employees</h1>
                 <p className="heroDetail">
@@ -94,19 +94,19 @@ const Home = () => {
           <div className="flexBox">
 
             <div className="aboutLeft shadowLeft">
-              <img src="/assets/img/aboutUs.png" alt="" />
+              <img src="./assets/img/aboutUs.png" alt="" />
             </div>
 
             <div className="aboutRight">
               <h2 className="heading-2">
                 About Us
               </h2>
-              <p className="text-2 mt-15">When working on her Master’s thesis on a paratransit software syststem, Asha Ramrahkiani 
-              realized the potential of technology to transform people’s lives, and was inspired to found ACS in 2011. The mission 
-              of ACS is to work with our partners in New York State on IT related projects and to fulfill all of their IT needs as 
-              effectively as possible.</p>
-              <p className="text-2 mt-15">ACS strives to improve life for communities across New York state by modernizing government 
-              systems. ACS doesn’t just look to get the job done - we aim to exceed our client’s expectations.</p>
+              <p className="text-2 mt-15">When working on her Master’s thesis on a paratransit software syststem, Asha Ramrahkiani
+                realized the potential of technology to transform people’s lives, and was inspired to found ACS in 2011. The mission
+                of ACS is to work with our partners in New York State on IT related projects and to fulfill all of their IT needs as
+                effectively as possible.</p>
+              <p className="text-2 mt-15">ACS strives to improve life for communities across New York state by modernizing government
+                systems. ACS doesn’t just look to get the job done - we aim to exceed our client’s expectations.</p>
               <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
             </div>
           </div>
@@ -133,7 +133,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Buyer buzz partner network disruptive non-disclosure agreement business"</p>
                   <div className="testimonialBox mt-40">
-                    <img src="/assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -146,7 +146,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor."</p>
                   <div className="testimonialBox mt-40">
-                    <img src="/assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -159,7 +159,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Release facebook responsive web design business model canvas seed money monetization."</p>
                   <div className="testimonialBox mt-40">
-                    <img src="/assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -172,7 +172,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Buyer buzz partner network disruptive non-disclosure agreement business"</p>
                   <div className="testimonialBox mt-40">
-                    <img src="/assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -193,7 +193,7 @@ const Home = () => {
           <div className="topDetails">
             <h1 className="commonHeading">Job Openings</h1>
             <p className="commonText">Our mission is to help you find the right job to reach your professional and lifestyle goals. We offer an ever-changing <br />
-            range of exciting opportunities for top-notch professionals.</p>
+              range of exciting opportunities for top-notch professionals.</p>
           </div>
 
           <table className='commonTable mt-60'>
@@ -211,16 +211,16 @@ const Home = () => {
                 <td>New York</td>
                 <td>1-4 Years</td>
                 <td>
-                  <a href="" className="redlink">Apply Now 
+                  <a href="" className="redlink">Apply Now
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_26_12)">
-                    <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_26_12">
-                    <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)"/>
-                    </clipPath>
-                    </defs>
+                      <g clip-path="url(#clip0_26_12)">
+                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_12">
+                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </a>
                 </td>
@@ -230,16 +230,16 @@ const Home = () => {
                 <td>New York</td>
                 <td>1-4 Years</td>
                 <td>
-                  <a href="" className="redlink">Apply Now 
+                  <a href="" className="redlink">Apply Now
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_26_12)">
-                    <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_26_12">
-                    <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)"/>
-                    </clipPath>
-                    </defs>
+                      <g clip-path="url(#clip0_26_12)">
+                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_12">
+                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </a>
                 </td>
@@ -249,16 +249,16 @@ const Home = () => {
                 <td>New York</td>
                 <td>1-4 Years</td>
                 <td>
-                  <a href="" className="redlink">Apply Now 
+                  <a href="" className="redlink">Apply Now
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_26_12)">
-                    <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_26_12">
-                    <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)"/>
-                    </clipPath>
-                    </defs>
+                      <g clip-path="url(#clip0_26_12)">
+                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_12">
+                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </a>
                 </td>
@@ -268,16 +268,16 @@ const Home = () => {
                 <td>New York</td>
                 <td>1-4 Years</td>
                 <td>
-                  <a href="" className="redlink">Apply Now 
+                  <a href="" className="redlink">Apply Now
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_26_12)">
-                    <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_26_12">
-                    <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)"/>
-                    </clipPath>
-                    </defs>
+                      <g clip-path="url(#clip0_26_12)">
+                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_12">
+                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </a>
                 </td>
