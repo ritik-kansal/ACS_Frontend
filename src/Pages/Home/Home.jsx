@@ -71,12 +71,12 @@ const Home = () => {
           </div>
 
           <div className="x3BoxWrap mt-60">
-            <ServiceBox src={'/assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'/assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'/assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'/assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'/assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'/assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
           </div>
 
         </div>
