@@ -40,7 +40,7 @@ const Services = () => {
                         <div className="navigationBox flexBox">
 
                             <div className="aboutLeft shadowLeft">
-                                <img src="./assets/img/aboutUs.png" alt="" />
+                                <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
                             </div>
 
                             <div className="aboutRight">
@@ -65,7 +65,7 @@ const Services = () => {
                         <div className="navigationBox flexBox">
 
                             <div className="aboutLeft shadowLeft">
-                                <img src="./assets/img/aboutUs.png" alt="" />
+                                <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
                             </div>
 
                             <div className="aboutRight">
@@ -94,7 +94,7 @@ const Services = () => {
                         <div className="navigationBox flexBox">
 
                             <div className="aboutLeft shadowLeft">
-                                <img src="./assets/img/aboutUs.png" alt="" />
+                                <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
                             </div>
 
                             <div className="aboutRight">
@@ -119,7 +119,7 @@ const Services = () => {
                         <div className="navigationBox flexBox">
 
                             <div className="aboutLeft shadowLeft">
-                                <img src="./assets/img/aboutUs.png" alt="" />
+                                <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
                             </div>
 
                             <div className="aboutRight">

@@ -15,9 +15,9 @@ const Partners = () => {
                     <h2 className="heading-3">Benefit from best-in-class capabilities, brought to you by ACS and the most trusted names in technology.</h2>
 
                     <div className="x3BoxWrap mt-60">
-                        <ServiceBox src={'./assets/img/settings.png'} text={'Seamless integration keeps it simple'} />
-                        <ServiceBox src={'./assets/img/glow.png'} text={'Big ideas call for big thinking'} />
-                        <ServiceBox src={'./assets/img/workingUser.png'} text={'The latest in emerging technology'} />
+                        <ServiceBox src={'/ACS_Frontend/assets/img/settings.png'} text={'Seamless integration keeps it simple'} />
+                        <ServiceBox src={'/ACS_Frontend/assets/img/glow.png'} text={'Big ideas call for big thinking'} />
+                        <ServiceBox src={'/ACS_Frontend/assets/img/workingUser.png'} text={'The latest in emerging technology'} />
                     </div>
 
                     <section className="multiLevelFormWrap">

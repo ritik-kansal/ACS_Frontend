@@ -19,7 +19,7 @@ const Home = () => {
         >
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider1BG.jpg" alt="" />
+              <img src="/ACS_Frontend/assets/img/slider1BG.jpg" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Clients</h1>
                 <p className="heroDetail">
@@ -33,7 +33,7 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider1BG.jpg" alt="" />
+              <img src="/ACS_Frontend/assets/img/slider1BG.jpg" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Partners</h1>
                 <p className="heroDetail">
@@ -47,7 +47,7 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider1BG.jpg" alt="" />
+              <img src="/ACS_Frontend/assets/img/slider1BG.jpg" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Employees</h1>
                 <p className="heroDetail">
@@ -71,12 +71,12 @@ const Home = () => {
           </div>
 
           <div className="x3BoxWrap mt-60">
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'/ACS_Frontend/assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'/ACS_Frontend/assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'/ACS_Frontend/assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'/ACS_Frontend/assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'/ACS_Frontend/assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'/ACS_Frontend/assets/img/code.png'} text={'Enterprise Technology Services'} />
           </div>
 
         </div>
@@ -94,7 +94,7 @@ const Home = () => {
           <div className="flexBox">
 
             <div className="aboutLeft shadowLeft">
-              <img src="./assets/img/aboutUs.png" alt="" />
+              <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
             </div>
 
             <div className="aboutRight">
@@ -133,7 +133,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Buyer buzz partner network disruptive non-disclosure agreement business"</p>
                   <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="/ACS_Frontend/assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -146,7 +146,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor."</p>
                   <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="/ACS_Frontend/assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -159,7 +159,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Release facebook responsive web design business model canvas seed money monetization."</p>
                   <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="/ACS_Frontend/assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -172,7 +172,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Buyer buzz partner network disruptive non-disclosure agreement business"</p>
                   <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="/ACS_Frontend/assets/img/userDemo.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>

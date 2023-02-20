@@ -14,7 +14,7 @@ const About = () => {
                     <div className="flexBox">
 
                         <div className="aboutLeft shadowLeft">
-                            <img src="./assets/img/aboutUs.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
                         </div>
 
                         <div className="aboutRight">
@@ -38,7 +38,7 @@ const About = () => {
                     <div className="flexBox">
 
                         <div className="aboutLeft shadowLeft">
-                            <img src="./assets/img/aboutUs.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/aboutUs.png" alt="" />
                         </div>
 
                         <div className="aboutRight">
@@ -67,9 +67,9 @@ const About = () => {
                     <h2 className="heading-2">Get Interesting Features at Our Place</h2>
 
                     <div className="x3BoxWrap mt-60">
-                        <ServiceBox src={'./assets/img/starpeople.png'} text={'Customer Experience'} detail={'At ACS we are committed to providing a world-class customer experience. Our team is made up of highly professional people who approach work with integrity & always seek to add value to the clients. We seek to build strong, long-term relationships with our clients by understanding their needs.'} />
-                        <ServiceBox src={'./assets/img/star.png'} text={'Excellence'} detail={'It is our policy at ACS to maintain the high standards that we started with. We do not compromise on quality in any area of our business. Whether it is hiring new people or working on a client’s project, we thrive on excellence. With our well structured internal quality controlprocedures.'} />
-                        <ServiceBox src={'./assets/img/helphand.png'} text={'Diversity'} detail={'ACS Consultancy Services Inc is a Small Business that is New York State and New York City Certified Minority and Women-Owned Business Enterprise. We provide Information Technology solutions and services, and IT consulting services to public sector entities.'} />
+                        <ServiceBox src={'/ACS_Frontend/assets/img/starpeople.png'} text={'Customer Experience'} detail={'At ACS we are committed to providing a world-class customer experience. Our team is made up of highly professional people who approach work with integrity & always seek to add value to the clients. We seek to build strong, long-term relationships with our clients by understanding their needs.'} />
+                        <ServiceBox src={'/ACS_Frontend/assets/img/star.png'} text={'Excellence'} detail={'It is our policy at ACS to maintain the high standards that we started with. We do not compromise on quality in any area of our business. Whether it is hiring new people or working on a client’s project, we thrive on excellence. With our well structured internal quality controlprocedures.'} />
+                        <ServiceBox src={'/ACS_Frontend/assets/img/helphand.png'} text={'Diversity'} detail={'ACS Consultancy Services Inc is a Small Business that is New York State and New York City Certified Minority and Women-Owned Business Enterprise. We provide Information Technology solutions and services, and IT consulting services to public sector entities.'} />
                     </div>
 
                 </div>

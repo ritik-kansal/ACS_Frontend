@@ -12,32 +12,32 @@ const GovernmentExperience = () => {
                     <div className="x5Wrapper flexBox mt-40">
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 

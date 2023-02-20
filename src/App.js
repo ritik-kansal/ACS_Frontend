@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import "./App.css";
 import Footer from "./Layouts/Footer/Footer";
 import Header from "./Layouts/Header/Header";
