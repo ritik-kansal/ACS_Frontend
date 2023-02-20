@@ -23,32 +23,32 @@ const GovernmentService = () => {
                     <div className="x4Wrapper flexBox mt-40">
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
@@ -59,32 +59,32 @@ const GovernmentService = () => {
                     <div className="x4Wrapper flexBox mt-40">
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="/ACS_Frontend/assets/img/demoUser.png" alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/demoUser.png`} alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 

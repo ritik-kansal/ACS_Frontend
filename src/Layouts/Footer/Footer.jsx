@@ -93,7 +93,7 @@ const Footer = () => {
                 </div>
 
                 <div className="bottomLevelFooter flexBox">
-                    <span className="footerLogo"><img src="/ACS_Frontend/assets/svg/logo.svg" alt="" /></span>
+                    <span className="footerLogo"><img src={`${process.env.PUBLIC_URL}/assets/svg/logo.svg`} alt="" /></span>
                     <div className="footerList flexBox">
                         <a href="">About us</a>
                         <a href="">Certifications</a>
