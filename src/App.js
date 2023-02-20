@@ -21,7 +21,7 @@ function App() {
     <div className="appContainer">
       <Header />
       <main>
-        <Routes basename={process.env.PUBLIC_URL}>
+        <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/services" element={<Services />} />
