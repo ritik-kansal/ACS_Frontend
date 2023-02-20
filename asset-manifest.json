@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ACS_Frontend/static/css/main.7705498b.css",
-    "main.js": "/ACS_Frontend/static/js/main.8394c4ea.js",
-    "static/js/787.0e8c8048.chunk.js": "/ACS_Frontend/static/js/787.0e8c8048.chunk.js",
-    "static/media/AboutBG.png": "/ACS_Frontend/static/media/AboutBG.7bcee63ce23f572d251e.png",
-    "static/media/governmentBG.png": "/ACS_Frontend/static/media/governmentBG.90479b4a690454bc3e4e.png",
-    "static/media/ServiceBG.png": "/ACS_Frontend/static/media/ServiceBG.831250d867a4d9cc8acb.png",
-    "static/media/carreerBG.png": "/ACS_Frontend/static/media/carreerBG.dad8a5dff1f7dba2e12a.png",
-    "static/media/NewsBG.png": "/ACS_Frontend/static/media/NewsBG.cbba66e653f182e2c5d3.png",
-    "static/media/careerBannerBG.png": "/ACS_Frontend/static/media/careerBannerBG.f76d39130e5bb3b38233.png",
-    "static/media/contactBG.png": "/ACS_Frontend/static/media/contactBG.c144aebd86dad1747d02.png",
-    "static/media/partnerBG.png": "/ACS_Frontend/static/media/partnerBG.ed0d15fd75724bdfc403.png",
-    "static/media/AwardBG.png": "/ACS_Frontend/static/media/AwardBG.03dda9dc031ef719bbf5.png",
-    "static/media/ContactusBG.jpg": "/ACS_Frontend/static/media/ContactusBG.696a29305c33ca80b88c.jpg",
-    "index.html": "/ACS_Frontend/index.html",
-    "main.7705498b.css.map": "/ACS_Frontend/static/css/main.7705498b.css.map",
-    "main.8394c4ea.js.map": "/ACS_Frontend/static/js/main.8394c4ea.js.map",
-    "787.0e8c8048.chunk.js.map": "/ACS_Frontend/static/js/787.0e8c8048.chunk.js.map"
+    "main.css": "/static/css/main.c9aa4767.css",
+    "main.js": "/static/js/main.e340edd4.js",
+    "static/js/787.0e8c8048.chunk.js": "/static/js/787.0e8c8048.chunk.js",
+    "static/media/AboutBG.png": "/static/media/AboutBG.7bcee63ce23f572d251e.png",
+    "static/media/governmentBG.png": "/static/media/governmentBG.90479b4a690454bc3e4e.png",
+    "static/media/ServiceBG.png": "/static/media/ServiceBG.831250d867a4d9cc8acb.png",
+    "static/media/carreerBG.png": "/static/media/carreerBG.dad8a5dff1f7dba2e12a.png",
+    "static/media/NewsBG.png": "/static/media/NewsBG.cbba66e653f182e2c5d3.png",
+    "static/media/careerBannerBG.png": "/static/media/careerBannerBG.f76d39130e5bb3b38233.png",
+    "static/media/contactBG.png": "/static/media/contactBG.c144aebd86dad1747d02.png",
+    "static/media/partnerBG.png": "/static/media/partnerBG.ed0d15fd75724bdfc403.png",
+    "static/media/AwardBG.png": "/static/media/AwardBG.03dda9dc031ef719bbf5.png",
+    "static/media/ContactusBG.jpg": "/static/media/ContactusBG.696a29305c33ca80b88c.jpg",
+    "index.html": "/index.html",
+    "main.c9aa4767.css.map": "/static/css/main.c9aa4767.css.map",
+    "main.e340edd4.js.map": "/static/js/main.e340edd4.js.map",
+    "787.0e8c8048.chunk.js.map": "/static/js/787.0e8c8048.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7705498b.css",
-    "static/js/main.8394c4ea.js"
+    "static/css/main.c9aa4767.css",
+    "static/js/main.e340edd4.js"
   ]
 }
