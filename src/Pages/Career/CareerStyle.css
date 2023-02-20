@@ -1,0 +1,126 @@
+.searchBoxWrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.searchBox input::placeholder{
+    color: #fff;
+}
+
+.searchBox input,
+.searchBoxWrap select{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    background: #2B2B2B;
+    border-radius: 9.52673px;
+    min-height: 58px;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: #fff;
+}
+
+.searchBoxWrap select{
+    max-width: 25%;
+}
+
+.flexBox.formDetailWrap{
+    color: #fff;
+    gap: 65px;
+    flex-wrap: nowrap;
+}
+
+.heading-3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+}
+
+.text-3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.formRight{
+    max-width: 470px;
+    width: 100%;
+}
+
+.contactForm{
+    background: #444444;
+}
+
+.contactForm button{
+    width: 100%;
+}
+
+.formHeading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #F0F0F0;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+
+.multiLevelFormWrap form{
+    background: #444444;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.multiLevelFormWrap .talentForm{
+    width: calc(50% - 10px);
+}
+
+.heading-4{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.multiLevelFormWrap .heading-4{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.partnerWrapper{
+    color: #fff;
+}
+
+.partnerWrapper .readMore{
+    display: none;
+}
+
+.partnerWrapper .servciceBox{
+    min-height: 245px;
+    align-content: flex-start;
+}
+
+.partnerWrapper .multiLevelFormWrap{
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+.btnWraperCenter{
+    text-align: center;
+    width: 100%;
+}
+
+.btnWraperCenter button{
+    min-width: 470px;
+}

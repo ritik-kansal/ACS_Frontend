@@ -1,0 +1,55 @@
+.governmentWrapper .text-2{
+    color: #fff;
+}
+
+.flexBox.x4Wrapper{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.flexBox.x5Wrapper{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.x4Wrapper .boxBusiness{
+    max-width: calc(25% - 20px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+    background: #444444;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.x5Wrapper .boxBusiness{
+    max-width: calc(20% - 20px);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+    background: #444444;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.x4Wrapper .boxBusiness img,
+.x5Wrapper .boxBusiness img{
+    width: 100%;
+}
+
+.x4Wrapper .boxBusiness .text-3,
+.x5Wrapper .boxBusiness .text-3{
+    padding: 8px 12px;
+    padding-top: 0;
+}
+
+.placementWrapper .text-2{
+    color: #fff;
+}

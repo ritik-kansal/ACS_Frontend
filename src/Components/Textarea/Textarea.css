@@ -1,0 +1,23 @@
+.formGroup textarea{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 12px;
+    height: auto;
+    width: 100%;
+    background: #F3F3F3;
+    border: none;
+}
+
+.formGroup textarea:focus,
+.formGroup textarea:focus-within{
+    outline: none;
+}
+
+.formGroup textarea::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #444444;
+    font-family: 'Rubik', sans-serif;
+}

@@ -1,0 +1,31 @@
+.missionWrapper{
+    background: #000;
+    color: #fff;
+}
+
+.missionWrapper .flexBox{    
+    flex-direction: row-reverse;
+}
+
+.aboutMid{
+    color: #fff;
+}
+
+.aboutMid .heading-2{
+    text-align: center;
+}
+
+.aboutMid .serviceHeading{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+.aboutMid .readMore{
+    display: none;
+}
+
+.aboutMid .servciceBox{
+    min-height: 396px;
+    align-content: flex-start;
+}

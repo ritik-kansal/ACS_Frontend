@@ -1,0 +1,73 @@
+.commonBanner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 20px;
+    min-height: 380px;
+    background-size: cover !important;
+}
+
+.headingBanner{
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.textBanner{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    color: #F1F1F1;
+    max-width: 600px;
+}
+
+.currentPage{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.activePage{
+    color: #FF364C;
+}
+
+/* all banner */
+
+.serviceBanner{
+    background: url('./ServiceBG.png');
+}
+
+.governmentBanner{
+    background: url('./governmentBG.png');
+}
+
+.careerBanner{
+    background: url('./carreerBG.png');
+}
+
+.talentBanner{
+    background: url('./careerBannerBG.png');
+}
+
+.partnerBG{
+    background: url('./partnerBG.png');
+}
+
+.NewsBG{
+    background: url('./NewsBG.png');
+}
+
+.AwardBG{
+    background: url('./AwardBG.png');
+}
+
+.ContactBG{
+    background: url('./contactBG.png');
+}
+
+.AboutBG{
+    background: url('./AboutBG.png');
+}
