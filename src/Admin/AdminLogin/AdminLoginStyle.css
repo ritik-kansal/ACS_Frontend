@@ -1,0 +1,48 @@
+.adminLoginWrap{
+    height: 100vh;
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.adminLoginBox{
+    max-width: 645px;
+    width: 100%;
+    background: #323232;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.adminHeading{
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+}
+
+.adminLoginBox input{
+    background: #EEEEEE;
+    border-radius: 9.52673px;
+}
+
+.redLink{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+    color: #FF364C;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.adminLoginBtn{
+    min-width: 354px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}

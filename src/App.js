@@ -1,5 +1,10 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import AdminLogin from './Admin/AdminLogin/AdminLogin';
+import GovernmentExperiences from './Admin/GovernmentExperiences/GovernmentExperiences';
 import './App.css';
+import AdminSideMenu from './Components/AdminSideMenu/AdminSideMenu';
+import AddAwardPopup from './Components/Popups/AddAwardPopup/AddAwardPopup';
+import AdminHeader from './Layouts/AdminHeader/AdminHeader';
 import Footer from './Layouts/Footer/Footer';
 import Header from './Layouts/Header/Header';
 import About from './Pages/About/About';
@@ -17,11 +22,21 @@ import News from './Pages/News/News';
 import Services from './Pages/Services/Services';
 
 function App() {
+const location = useLocation();
+
   return (
     <div className="appContainer">
-        <Header />
-        <main>
+      <AddAwardPopup isActive={false}/>
+        {location.pathname === '/admin' || location.pathname === '/govermentExperiences' ? <AdminHeader /> : <Header />}
+        <main className={`${location.pathname === '/admin' || location.pathname === '/govermentExperiences' ? 'clearAll' : ''}`}>
+        {location.pathname === '/govermentExperiences' && <AdminSideMenu />}
           <Routes>
+            {/* Admin Routes */}
+            <Route exact path='/admin' element={<AdminLogin />}/>
+            <Route exact path='/govermentExperiences' element={<GovernmentExperiences />}/>
+
+
+            {/* User Routes */}
             <Route exact path='/' element={<Home />}/>
             <Route exact path='/about' element={<About />}/>
             <Route exact path='/services' element={<Services />}/>
@@ -37,7 +52,8 @@ function App() {
             <Route exact path='/contact' element={<Contact />}/>
           </Routes>
         </main>
-        <Footer />
+        {location.pathname !== '/admin' && location.pathname !== '/govermentExperiences' && <Footer />}
+
     </div>
   );
 }

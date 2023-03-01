@@ -1,0 +1,7 @@
+header.adminHeader{
+    background: #323232;
+}
+
+header.adminHeader .logoAlign{
+    transform: translateX(-50px);
+}

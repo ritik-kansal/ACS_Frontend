@@ -3,3 +3,10 @@ main{
     padding-bottom: 320px;
     background: #757575;
 }
+
+main.clearAll{
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
