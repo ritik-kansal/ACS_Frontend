@@ -1,0 +1,14 @@
+.redLinkCV{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    color: #FF364C;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}

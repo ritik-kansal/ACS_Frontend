@@ -32,7 +32,7 @@ const Career = () => {
                     </select>
                 </div>
 
-                <table className='commonTable mt-60'>
+          <table className='commonTable mt-60'>
             <thead>
               <tr>
                 <th>Position</th>

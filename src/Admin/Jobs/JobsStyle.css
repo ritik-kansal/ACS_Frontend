@@ -1,0 +1,20 @@
+.jobsBox .commonTable tbody td{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 16px;
+}
+
+.jobsHeading{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: #fff;
+}
+
+.jobsText{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+}

@@ -1,9 +1,14 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import AdminLogin from './Admin/AdminLogin/AdminLogin';
 import GovernmentExperiences from './Admin/GovernmentExperiences/GovernmentExperiences';
+import Jobs from './Admin/Jobs/Jobs';
+import JosbDetail from './Admin/Jobs/JosbDetail';
+import PartnerForm from './Admin/PartnerForm/PartnerForm';
+import TalentCommunity from './Admin/TalentCommunity/TalentCommunity';
 import './App.css';
 import AdminSideMenu from './Components/AdminSideMenu/AdminSideMenu';
 import AddAwardPopup from './Components/Popups/AddAwardPopup/AddAwardPopup';
+import AddJobPopup from './Components/Popups/AddJobPopup/AddJobPopup';
 import AdminHeader from './Layouts/AdminHeader/AdminHeader';
 import Footer from './Layouts/Footer/Footer';
 import Header from './Layouts/Header/Header';
@@ -27,13 +32,18 @@ const location = useLocation();
   return (
     <div className="appContainer">
       <AddAwardPopup isActive={false}/>
-        {location.pathname === '/admin' || location.pathname === '/govermentExperiences' ? <AdminHeader /> : <Header />}
-        <main className={`${location.pathname === '/admin' || location.pathname === '/govermentExperiences' ? 'clearAll' : ''}`}>
-        {location.pathname === '/govermentExperiences' && <AdminSideMenu />}
+      <AddJobPopup isActive={false}/>
+        {location.pathname === '/admin' || location.pathname === '/govermentExperiences' || location.pathname === '/partnerForm' || location.pathname === '/talentCommunity' || location.pathname === '/jobs' || location.pathname === '/jobsDetail' ? <AdminHeader /> : <Header />}
+        <main className={`${location.pathname === '/admin' || location.pathname === '/govermentExperiences' || location.pathname === '/partnerForm' || location.pathname === '/talentCommunity' || location.pathname === '/jobs' || location.pathname === '/jobsDetail' ? 'clearAll' : ''}`}>
+        {location.pathname === '/govermentExperiences' || location.pathname === '/partnerForm' || location.pathname === '/talentCommunity' || location.pathname === '/jobs' || location.pathname === '/jobsDetail' ? <AdminSideMenu /> : ''}
           <Routes>
             {/* Admin Routes */}
             <Route exact path='/admin' element={<AdminLogin />}/>
             <Route exact path='/govermentExperiences' element={<GovernmentExperiences />}/>
+            <Route exact path='/partnerForm' element={<PartnerForm />}/>
+            <Route exact path='/talentCommunity' element={<TalentCommunity />}/>
+            <Route exact path='/jobs' element={<Jobs />}/>
+            <Route exact path='/jobsDetail' element={<JosbDetail />}/>
 
 
             {/* User Routes */}
@@ -52,7 +62,7 @@ const location = useLocation();
             <Route exact path='/contact' element={<Contact />}/>
           </Routes>
         </main>
-        {location.pathname !== '/admin' && location.pathname !== '/govermentExperiences' && <Footer />}
+        {location.pathname !== '/admin' && location.pathname !== '/govermentExperiences' && location.pathname !== '/partnerForm' && location.pathname !== '/talentCommunity' && location.pathname !== '/jobs' && location.pathname !== '/jobsDetail' && <Footer />}
 
     </div>
   );

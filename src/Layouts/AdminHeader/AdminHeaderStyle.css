@@ -3,5 +3,33 @@ header.adminHeader{
 }
 
 header.adminHeader .logoAlign{
-    transform: translateX(-50px);
+    position: absolute;
+    left: 30px;
+}
+
+.headerBtn{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 29px;
+    padding: 6px 18px;
+}
+
+.buttonWrapHeader{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rightWrapper{
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+}
+
+.HeaderHeading{
+    min-width: max-content;
+    margin-left: 130px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff;
 }

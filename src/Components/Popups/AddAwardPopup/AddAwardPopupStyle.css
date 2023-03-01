@@ -17,7 +17,7 @@
 }
 
 .popupWrap.active{
-    z-index: 999;
+    z-index: 3500;
     opacity: 1;
     visibility: visible;
     transition: 0.4s ease-in-out;

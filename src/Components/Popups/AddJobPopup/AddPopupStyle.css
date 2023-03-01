@@ -1,0 +1,24 @@
+.jobsPopup{
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.jobsPopup select,
+.sameDesignTextArea{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 12px;
+    height: 58px;
+    width: 100%;
+    background: #F3F3F3;
+    border: none;
+    max-width: calc(50% - 10px);
+}
+
+.sameDesignTextArea{
+    max-width: 100%;
+    height: max-content;
+    height: 120px;
+}
