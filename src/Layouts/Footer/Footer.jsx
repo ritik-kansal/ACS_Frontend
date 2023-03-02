@@ -1,11 +1,42 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
 import { useLocation } from 'react-router';
 import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 import Textarea from '../../Components/Textarea/Textarea';
+import { API_GET_IN_TOUCH } from '../../config';
 import './FooterStyle.css';
 
 const Footer = () => {
+
+    const [msgSent, setMsgSent] = useState(false);
+
+    const defaultGetInTouch = {
+        name: '',
+        email: '',
+        phone: '',
+        query: '',
+        message: ''
+    }
+
+    const [getInTouch, setGetInTouch] = useState(defaultGetInTouch);
+
+    const onSave = (e) => {
+        e.preventDefault();
+        axios.post(API_GET_IN_TOUCH, getInTouch, {
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+            }
+        }).then((res) => {
+            console.log(res);
+            setMsgSent(true);
+            setGetInTouch(defaultGetInTouch);
+        }).catch((err) => {
+            setMsgSent(false);
+            setGetInTouch(defaultGetInTouch);
+            console.log(err);
+        })
+    }
 
     const location = useLocation();
 
@@ -63,13 +94,15 @@ const Footer = () => {
                     {location.pathname !== "./contact" ?
 
                         <div className="topLevelRight">
-                            <form action="" className='whiteForm'>
+                            <form onSubmit={onSave} className='whiteForm'>
 
-                                <Input className={'mt-20'} type={'text'} placeholder={'Name'} />
-                                <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} />
-                                <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} />
+                                <Input className={'mt-20'} type={'text'} placeholder={'Name'} value={getInTouch.name} onChange={(e) => setGetInTouch({ ...getInTouch, name: e.target.value })} />
+                                <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} value={getInTouch.email} onChange={(e) => setGetInTouch({ ...getInTouch, email: e.target.value })} />
+                                <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} value={getInTouch.phone} onChange={(e) => setGetInTouch({ ...getInTouch, phone: e.target.value })} />
                                 <Button className={'HeroButton mt-20'} name={'Submit'} />
-
+                                {
+                                    msgSent == true && <div className="msgSent">Message Sent</div>
+                                }
                             </form>
                         </div>
 

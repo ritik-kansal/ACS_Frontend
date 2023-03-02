@@ -2,15 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './AdminSideMenuStyle.css';
 
-const AdminSideMenu = () => {
+const AdminSideMenu = ({ value }) => {
+
+
+
   return (
     <div className="adminSideMenuWrap">
       <ul className='sideMenu'>
-        <li className='active'><a href="/govermentExperiences">Government Experiences</a></li>
-        <li><a href="/partnerForm">Partners Form</a></li>
-        <li><a href="/talentCommunity">Talent Community</a></li>
-        <li><a href="/#">Get in touch</a></li>
-        <li><a href="/jobsDetail">Jobs</a></li>
+        <li className={value == 'govermentExperiences' ? 'active' : ''}><Link to="/admin-govermentExperiences">Government Experiences</Link></li>
+        <li className={value == 'partnerForm' ? 'active' : ''}><Link to="/admin-partnerForm">Partners Form</Link></li>
+        <li className={value == 'talentCommunity' ? 'active' : ''}><Link to="/admin-talentCommunity">Talent Community</Link></li>
+        <li className={value == 'getInTouch' ? 'active' : ''}><Link to="/#">Get in touch</Link></li>
+        <li className={value == 'jobs' ? 'active' : ''}><Link to="/admin-jobs">Jobs</Link></li>
       </ul>
     </div>
   )

@@ -1,69 +1,83 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
-import AdminLogin from './Admin/AdminLogin/AdminLogin';
-import GovernmentExperiences from './Admin/GovernmentExperiences/GovernmentExperiences';
-import Jobs from './Admin/Jobs/Jobs';
-import JosbDetail from './Admin/Jobs/JosbDetail';
-import PartnerForm from './Admin/PartnerForm/PartnerForm';
-import TalentCommunity from './Admin/TalentCommunity/TalentCommunity';
-import './App.css';
-import AdminSideMenu from './Components/AdminSideMenu/AdminSideMenu';
-import AddAwardPopup from './Components/Popups/AddAwardPopup/AddAwardPopup';
-import AddJobPopup from './Components/Popups/AddJobPopup/AddJobPopup';
-import AdminHeader from './Layouts/AdminHeader/AdminHeader';
-import Footer from './Layouts/Footer/Footer';
-import Header from './Layouts/Header/Header';
-import About from './Pages/About/About';
-import Awards from './Pages/Awards/Awards';
-import Career from './Pages/Career/Career';
-import GetJob from './Pages/Career/GetJob';
-import Partners from './Pages/Career/Partners';
-import Talent from './Pages/Career/Talent';
-import Contact from './Pages/Contact/Contact';
-import GovernmentExperience from './Pages/GovernmentService/GovernmentExperience';
-import GovernmentPlacements from './Pages/GovernmentService/GovernmentPlacements';
-import GovernmentService from './Pages/GovernmentService/GovernmentService';
-import Home from './Pages/Home/Home';
-import News from './Pages/News/News';
-import Services from './Pages/Services/Services';
+import { useContext } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import AdminLogin from "./Admin/AdminLogin/AdminLogin";
+import GovernmentExperiences from "./Admin/GovernmentExperiences/GovernmentExperiences";
+import Jobs from "./Admin/Jobs/Jobs";
+import JosbDetail from "./Admin/Jobs/JosbDetail";
+import PartnerForm from "./Admin/PartnerForm/PartnerForm";
+import TalentCommunity from "./Admin/TalentCommunity/TalentCommunity";
+import "./App.css";
+import AddJobPopup from "./Components/Popups/AddJobPopup/AddJobPopup";
+import { AuthContext } from "./contexts/AuthContext";
+import AdminHeader from "./Layouts/AdminHeader/AdminHeader";
+import Footer from "./Layouts/Footer/Footer";
+import Header from "./Layouts/Header/Header";
+import About from "./Pages/About/About";
+import Awards from "./Pages/Awards/Awards";
+import Career from "./Pages/Career/Career";
+import GetJob from "./Pages/Career/GetJob";
+import Partners from "./Pages/Career/Partners";
+import Talent from "./Pages/Career/Talent";
+import Contact from "./Pages/Contact/Contact";
+import GovernmentExperience from "./Pages/GovernmentService/GovernmentExperience";
+import GovernmentPlacements from "./Pages/GovernmentService/GovernmentPlacements";
+import GovernmentService from "./Pages/GovernmentService/GovernmentService";
+import Home from "./Pages/Home/Home";
+import News from "./Pages/News/News";
+import Services from "./Pages/Services/Services";
 
 function App() {
-const location = useLocation();
+  const location = useLocation();
+
+  const { user, isAuthenticated } = useContext(AuthContext);
 
   return (
     <div className="appContainer">
-      <AddAwardPopup isActive={false}/>
-      <AddJobPopup isActive={false}/>
-        {location.pathname === '/admin' || location.pathname === '/govermentExperiences' || location.pathname === '/partnerForm' || location.pathname === '/talentCommunity' || location.pathname === '/jobs' || location.pathname === '/jobsDetail' ? <AdminHeader /> : <Header />}
-        <main className={`${location.pathname === '/admin' || location.pathname === '/govermentExperiences' || location.pathname === '/partnerForm' || location.pathname === '/talentCommunity' || location.pathname === '/jobs' || location.pathname === '/jobsDetail' ? 'clearAll' : ''}`}>
-        {location.pathname === '/govermentExperiences' || location.pathname === '/partnerForm' || location.pathname === '/talentCommunity' || location.pathname === '/jobs' || location.pathname === '/jobsDetail' ? <AdminSideMenu /> : ''}
+      {location.pathname !== "/admin" ||
+      location.pathname !== "/admin-govermentExperiences" ||
+      location.pathname !== "/admin-partnerForm" ||
+      location.pathname !== "/admin-talentCommunity" ||
+      location.pathname !== "/admin-jobs" ||
+      !location.pathname.startsWith("/admin-jobsDetail") ? (
+        <Header />
+      ) : (
+        <></>
+      )}
+      <main>
+        {isAuthenticated && (
           <Routes>
-            {/* Admin Routes */}
-            <Route exact path='/admin' element={<AdminLogin />}/>
-            <Route exact path='/govermentExperiences' element={<GovernmentExperiences />}/>
-            <Route exact path='/partnerForm' element={<PartnerForm />}/>
-            <Route exact path='/talentCommunity' element={<TalentCommunity />}/>
-            <Route exact path='/jobs' element={<Jobs />}/>
-            <Route exact path='/jobsDetail' element={<JosbDetail />}/>
-
-
-            {/* User Routes */}
-            <Route exact path='/' element={<Home />}/>
-            <Route exact path='/about' element={<About />}/>
-            <Route exact path='/services' element={<Services />}/>
-            <Route exact path='/governmentCertification' element={<GovernmentService />}/>
-            <Route exact path='/governmentExperience' element={<GovernmentExperience />}/>
-            <Route exact path='/governmentPlacement' element={<GovernmentPlacements />}/>
-            <Route exact path='/jobOpening' element={<Career />}/>
-            <Route exact path='/getaJob' element={<GetJob />}/>
-            <Route exact path='/talentCommunity' element={<Talent />}/>
-            <Route exact path='/partner' element={<Partners />}/>
-            <Route exact path='/news' element={<News />}/>
-            <Route exact path='/awards' element={<Awards />}/>
-            <Route exact path='/contact' element={<Contact />}/>
+            <Route exact path="/admin-govermentExperiences" element={<GovernmentExperiences />} />
+            <Route exact path="/admin-partnerForm" element={<PartnerForm />} />
+            <Route exact path="/admin-talentCommunity" element={<TalentCommunity />} />
+            <Route exact path="/admin-jobs" element={<Jobs />} />
+            <Route exact path="/admin-jobsDetail/:id" element={<JosbDetail />} />
           </Routes>
-        </main>
-        {location.pathname !== '/admin' && location.pathname !== '/govermentExperiences' && location.pathname !== '/partnerForm' && location.pathname !== '/talentCommunity' && location.pathname !== '/jobs' && location.pathname !== '/jobsDetail' && <Footer />}
+        )}
 
+        <Routes>
+          <Route exact path="/admin" element={<AdminLogin />} />
+          {/* User Routes */}
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/governmentCertification" element={<GovernmentService />} />
+          <Route exact path="/governmentExperience" element={<GovernmentExperience />} />
+          <Route exact path="/governmentPlacement" element={<GovernmentPlacements />} />
+          <Route exact path="/jobOpening" element={<Career />} />
+          <Route exact path="/getaJob" element={<GetJob />} />
+          <Route exact path="/talentCommunity" element={<Talent />} />
+          <Route exact path="/partner" element={<Partners />} />
+          <Route exact path="/news" element={<News />} />
+          <Route exact path="/awards" element={<Awards />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      {location.pathname !== "/admin" &&
+        location.pathname !== "/admin-govermentExperiences" &&
+        location.pathname !== "/admin-partnerForm" &&
+        location.pathname !== "/admin-talentCommunity" &&
+        location.pathname !== "/admin-jobs" &&
+        !location.pathname.startsWith("/admin-jobsDetail") && <Footer />}
     </div>
   );
 }

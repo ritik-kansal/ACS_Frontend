@@ -1,96 +1,101 @@
-footer{
-    background: #000;
-    padding-top: 270px;
-    position: relative;
+footer {
+  background: #000;
+  padding-top: 270px;
+  position: relative;
 }
 
-.topLevelFooter{
-    padding: 60px 90px;
-    justify-content: space-between;
-    color: #fff;
-    background: #444444;
-    border-radius: 10px;
-    position: absolute;
-    top: -250px;
-    width: 100%;
-    left: 0;
-    right: 0;
-    max-width: 1280px;
-    margin: 0 auto;
+.topLevelFooter {
+  padding: 60px 90px;
+  justify-content: space-between;
+  color: #fff;
+  background: #444444;
+  border-radius: 10px;
+  position: absolute;
+  top: -250px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.topLevelLeft{
-    max-width: 580px;
-    width: 100%;
+.topLevelLeft {
+  max-width: 580px;
+  width: 100%;
 }
 
-.topLevelRight{
-    max-width: 480px;
-    width: 100%;
+.topLevelRight {
+  max-width: 480px;
+  width: 100%;
 }
 
-.footerHeading{
-    font-weight: 700;
-    font-size: 46px;
-    line-height: 130%;
+.footerHeading {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
 }
 
-.footerText{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 155%;
+.footerText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 155%;
 }
 
-.flexBox.bottomLevelFooter{
-    align-items: center;
-    padding: 24px 0;
-    border-bottom: 1px solid #565656;
+.flexBox.bottomLevelFooter {
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #565656;
 }
 
-.footerList{
-    gap: 52px;
+.footerList {
+  gap: 52px;
 }
 
-.footerList a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+.footerList a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
-.flexBox.footerSocial{
-    padding: 24px 0 40px;
-    align-items: center;
+.flexBox.footerSocial {
+  padding: 24px 0 40px;
+  align-items: center;
 }
 
-.footerText{
-    color: #fff;
+.footerText {
+  color: #fff;
 }
 
-.socialIcons svg:not(:first-child){
-    margin-left: 24px;
+.socialIcons svg:not(:first-child) {
+  margin-left: 24px;
 }
 
-.whiteForm{
-    padding: 32px;
-    background: #fff;
-    border-radius: 8px;
+.whiteForm {
+  padding: 32px;
+  background: #fff;
+  border-radius: 8px;
 }
 
-.topLevelRight button{
-    width: 100%;
+.topLevelRight button {
+  width: 100%;
 }
 
-.listBox{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
+.listBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
-.listBox span{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+.listBox span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.msgSent {
+  text-align: center;
+  color: #000;
+  margin-top: 10px;
 }

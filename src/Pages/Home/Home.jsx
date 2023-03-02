@@ -1,12 +1,27 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Button from '../../Components/Button/Button';
 import ServiceBox from '../../Components/serviceBox/ServiceBox';
 import './HomeStyle.css';
 import 'swiper/css';
 import { Navigation } from 'swiper';
+import { API_JOB } from '../../config';
 
 const Home = () => {
+
+  const [jobs, setJobs] = useState([]);
+
+  const getJobs = async () => {
+    const res = await axios.get(API_JOB)
+    console.log(res.data['jobs'])
+    setJobs(res.data['jobs'])
+  }
+
+  useEffect(() => {
+    getJobs();
+  }, [])
+
   return (
     <>
       <div className="swiperMain">
@@ -33,7 +48,7 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider1BG.jpg" alt="" />
+              <img src="./assets/img/slider2BG.png" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Partners</h1>
                 <p className="heroDetail">
@@ -47,7 +62,7 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider1BG.jpg" alt="" />
+              <img src="./assets/img/slider3BG.png" alt="" />
               <div className="siderText">
                 <h1 className="heroText">Employees</h1>
                 <p className="heroDetail">
@@ -72,11 +87,11 @@ const Home = () => {
 
           <div className="x3BoxWrap mt-60">
             <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Business Process Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Infrastructure Management Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Cloud Management Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Staff Augmentation services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'ERP/SAP Services'} />
           </div>
 
         </div>
@@ -206,82 +221,31 @@ const Home = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Peoplesoft Functional Supply Chain Manager</td>
-                <td>New York</td>
-                <td>1-4 Years</td>
-                <td>
-                  <a href="" className="redlink">Apply Now
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_26_12)">
-                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_26_12">
-                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Peoplesoft Functional Supply Chain Manager</td>
-                <td>New York</td>
-                <td>1-4 Years</td>
-                <td>
-                  <a href="" className="redlink">Apply Now
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_26_12)">
-                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_26_12">
-                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Peoplesoft Functional Supply Chain Manager</td>
-                <td>New York</td>
-                <td>1-4 Years</td>
-                <td>
-                  <a href="" className="redlink">Apply Now
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_26_12)">
-                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_26_12">
-                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </td>
-              </tr>
-              <tr>
-                <td>Peoplesoft Functional Supply Chain Manager</td>
-                <td>New York</td>
-                <td>1-4 Years</td>
-                <td>
-                  <a href="" className="redlink">Apply Now
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_26_12)">
-                        <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_26_12">
-                          <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </td>
-              </tr>
+              {
+                jobs.map((item, index) => {
+                  return (
+                    <tr key={index}>
+                      <td>{item.position}</td>
+                      <td>{item.location}</td>
+                      <td>{item.required_exp}</td>
+                      <td>
+                        <a href="" className="redlink">Apply Now
+                          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_26_12)">
+                              <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_26_12">
+                                <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </td>
+                    </tr>
+                  )
+                })
+              }
             </tbody>
           </table>
 
