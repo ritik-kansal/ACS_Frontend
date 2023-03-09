@@ -1,75 +1,75 @@
-.newText2{
-    color: #fff;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
+.newText2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
 }
 
-.redHeading{
-    font-weight: 700;
-    font-size: 46px;
-    line-height: 120%;
-    color: #FF364C;
+.redHeading {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 120%;
+  color: #ff364c;
 }
 
-.navigationWrapper{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    border-radius: 8px;
-    overflow: hidden;
+.navigationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.navigationTab{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 120%;
-    padding: 36px 80px;
-    min-height: 144px;
-    width: 25%; 
-    background: #1D1D1D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
+.navigationTab {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  padding: 36px 60px;
+  min-height: 144px;
+  width: 100%;
+  background: #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
 }
 
 .navigationTab.active,
-.navigationTab:hover{
-    transition: 0.4s ease-in-out;
-    background: #FF364C;
+.navigationTab:hover {
+  transition: 0.4s ease-in-out;
+  background: #ff364c;
 }
 
-.navigationBox{
-    margin-top: 80px;
+.navigationBox {
+  margin-top: 80px;
 }
 
-.serviceList{
-    padding-left: 20px;
+.serviceList {
+  padding-left: 20px;
 }
 
-.serviceList li{
-    color: #fff;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 150%;
+.serviceList li {
+  color: #fff;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 150%;
 }
 
-.serviceList li:not(:first-child){
-    margin-top: 10px;
+.serviceList li:not(:first-child) {
+  margin-top: 10px;
 }
 
-.aboutRight .heading-2{
-    color: #fff;
+.aboutRight .heading-2 {
+  color: #fff;
 }
 
-.navigationBoxWrap{
-    display: none;
+.navigationBoxWrap {
+  display: none;
 }
 
-.navigationBoxWrap.active{
-    display: block;
+.navigationBoxWrap.active {
+  display: block;
 }

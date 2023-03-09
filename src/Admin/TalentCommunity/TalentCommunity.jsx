@@ -1,230 +1,95 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useContext, useEffect, useState } from 'react'
 import AdminSideMenu from '../../Components/AdminSideMenu/AdminSideMenu';
+import { API_TALENT } from '../../config';
+import { AuthContext } from '../../contexts/AuthContext';
 import AdminHeader from '../../Layouts/AdminHeader/AdminHeader';
 import './TalentCommunityStyle.css';
 
 const TalentCommunity = () => {
+
+    const { user } = useContext(AuthContext);
+
+    const [talentCommunity, setTalentCommunity] = useState([]);
+
+    const getTalentCommunity = async () => {
+        const res = await axios.get(API_TALENT, {
+            headers: {
+                'Authorization': `Bearer ${user.access_token}`
+            }
+        });
+        if (res.status === 200) {
+            console.log(talentCommunity)
+            console.log(res.data)
+            setTalentCommunity(res.data.talentForms);
+        }
+    }
+
+    useEffect(() => {
+        getTalentCommunity();
+    }, [])
+
+
     return (
         <main className='clearAll'>
             <AdminHeader />
             <AdminSideMenu value={'talentCommunity'} />
             <section className="blackBox">
 
-                <div className="detailListWrap">
+                {
+                    talentCommunity.map((talent, index) => {
+                        return (
 
-                    <div className="detailList">
-                        <strong>Name: </strong>
-                        <span>John Doe</span>
-                    </div>
+                            <div className="detailListWrap">
 
-                    <div className="detailList">
-                        <strong>Email: </strong>
-                        <span>Abc@gmail.com</span>
-                    </div>
+                                <div className="detailList">
+                                    <strong>Name: </strong>
+                                    <span>{talent.first_name + " " + talent.last_name}</span>
+                                </div>
 
-                    <div className="detailList">
-                        <strong>Organisation: </strong>
-                        <span>NYC Health Hospital, NY</span>
-                    </div>
+                                <div className="detailList">
+                                    <strong>Email: </strong>
+                                    <span>{talent.email}</span>
 
-                    <div className="detailList">
-                        <strong>Phone Number: </strong>
-                        <span>+91 7770000230</span>
-                    </div>
+                                </div>
 
-                    <div className="detailList">
-                        <strong>Region: </strong>
-                        <span>New York</span>
-                    </div>
+                                <div className="detailList">
+                                    <strong>phone: </strong>
+                                    <span>{talent.phone}</span>
+                                </div>
 
-                    <div className="detailList">
-                        <strong>Partners: </strong>
-                        <span>Full Time</span>
-                    </div>
+                                <div className="detailList">
+                                    <strong>Current Employee: </strong>
+                                    <span>{talent.current_employee}</span>
+                                </div>
 
-                    <div className="detailList">
-                        <strong>Message: </strong>
-                        <span>Benefit from best-in-class capabilities,</span>
-                    </div>
+                                <div className="detailList">
+                                    <strong>Current Designation: </strong>
+                                    <span>{talent.current_designation}</span>
+                                </div>
 
-                    <div className="detailList flexbox">
-                        <strong>Upload CV: </strong>
-                        <span className='redLinkCV'>
-                            File ABC
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_7_21811)">
-                                    <path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V12H4V19Z" fill="#FF364C" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_21811">
-                                        <rect width="24" height="24" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </div>
+                                <div className="detailList">
 
-                    <div className="floatingIcons">
-                        <span>
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="36" height="36" rx="6.92308" fill="#414141" />
-                                <g clip-path="url(#clip0_7_21660)">
-                                    <path d="M22.3268 12.8079H26.6536V14.5386H24.9229V25.7882C24.9229 26.0177 24.8317 26.2378 24.6694 26.4001C24.5071 26.5624 24.287 26.6536 24.0575 26.6536H11.9425C11.713 26.6536 11.4929 26.5624 11.3306 26.4001C11.1683 26.2378 11.0771 26.0177 11.0771 25.7882V14.5386H9.34644V12.8079H13.6732V10.2118C13.6732 9.98229 13.7644 9.76218 13.9267 9.59989C14.089 9.43761 14.3091 9.34644 14.5386 9.34644H21.4614C21.6909 9.34644 21.9111 9.43761 22.0733 9.59989C22.2356 9.76218 22.3268 9.98229 22.3268 10.2118V12.8079ZM23.1922 14.5386H12.8079V24.9229H23.1922V14.5386ZM15.4039 17.1347H17.1347V22.3268H15.4039V17.1347ZM18.8654 17.1347H20.5961V22.3268H18.8654V17.1347ZM15.4039 11.0771V12.8079H20.5961V11.0771H15.4039Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_21660">
-                                        <rect width="20.7686" height="20.7686" fill="white" transform="translate(7.61572 7.61572)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </div>
+                                    <strong>CV: </strong>
+                                    <span className='redLinkCV'>
+                                        <a className='redLinkCV' href={`https://acs-data-1.s3.us-east-2.amazonaws.com/${talent.cv}`}>Cv</a>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_7_21811)">
+                                                <path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V12H4V19Z" fill="#FF364C" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_7_21811">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        )
+                    })
 
-                </div>
-
-                <div className="detailListWrap">
-
-                    <div className="detailList">
-                        <strong>Name: </strong>
-                        <span>John Doe</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Email: </strong>
-                        <span>Abc@gmail.com</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Organisation: </strong>
-                        <span>NYC Health Hospital, NY</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Phone Number: </strong>
-                        <span>+91 7770000230</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Region: </strong>
-                        <span>New York</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Partners: </strong>
-                        <span>Full Time</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Message: </strong>
-                        <span>Benefit from best-in-class capabilities,</span>
-                    </div>
-
-                    <div className="detailList flexbox">
-                        <strong>Upload CV: </strong>
-                        <span className='redLinkCV'>
-                            File ABC
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_7_21811)">
-                                    <path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V12H4V19Z" fill="#FF364C" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_21811">
-                                        <rect width="24" height="24" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </div>
-
-                    <div className="floatingIcons">
-                        <span>
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="36" height="36" rx="6.92308" fill="#414141" />
-                                <g clip-path="url(#clip0_7_21660)">
-                                    <path d="M22.3268 12.8079H26.6536V14.5386H24.9229V25.7882C24.9229 26.0177 24.8317 26.2378 24.6694 26.4001C24.5071 26.5624 24.287 26.6536 24.0575 26.6536H11.9425C11.713 26.6536 11.4929 26.5624 11.3306 26.4001C11.1683 26.2378 11.0771 26.0177 11.0771 25.7882V14.5386H9.34644V12.8079H13.6732V10.2118C13.6732 9.98229 13.7644 9.76218 13.9267 9.59989C14.089 9.43761 14.3091 9.34644 14.5386 9.34644H21.4614C21.6909 9.34644 21.9111 9.43761 22.0733 9.59989C22.2356 9.76218 22.3268 9.98229 22.3268 10.2118V12.8079ZM23.1922 14.5386H12.8079V24.9229H23.1922V14.5386ZM15.4039 17.1347H17.1347V22.3268H15.4039V17.1347ZM18.8654 17.1347H20.5961V22.3268H18.8654V17.1347ZM15.4039 11.0771V12.8079H20.5961V11.0771H15.4039Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_21660">
-                                        <rect width="20.7686" height="20.7686" fill="white" transform="translate(7.61572 7.61572)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </div>
-
-                </div>
-
-                <div className="detailListWrap">
-
-                    <div className="detailList">
-                        <strong>Name: </strong>
-                        <span>John Doe</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Email: </strong>
-                        <span>Abc@gmail.com</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Organisation: </strong>
-                        <span>NYC Health Hospital, NY</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Phone Number: </strong>
-                        <span>+91 7770000230</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Region: </strong>
-                        <span>New York</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Partners: </strong>
-                        <span>Full Time</span>
-                    </div>
-
-                    <div className="detailList">
-                        <strong>Message: </strong>
-                        <span>Benefit from best-in-class capabilities,</span>
-                    </div>
-
-                    <div className="detailList flexbox">
-                        <strong>Upload CV: </strong>
-                        <span className='redLinkCV'>
-                            File ABC
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_7_21811)">
-                                    <path d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V12H4V19Z" fill="#FF364C" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_21811">
-                                        <rect width="24" height="24" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </div>
-
-                    <div className="floatingIcons">
-                        <span>
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="36" height="36" rx="6.92308" fill="#414141" />
-                                <g clip-path="url(#clip0_7_21660)">
-                                    <path d="M22.3268 12.8079H26.6536V14.5386H24.9229V25.7882C24.9229 26.0177 24.8317 26.2378 24.6694 26.4001C24.5071 26.5624 24.287 26.6536 24.0575 26.6536H11.9425C11.713 26.6536 11.4929 26.5624 11.3306 26.4001C11.1683 26.2378 11.0771 26.0177 11.0771 25.7882V14.5386H9.34644V12.8079H13.6732V10.2118C13.6732 9.98229 13.7644 9.76218 13.9267 9.59989C14.089 9.43761 14.3091 9.34644 14.5386 9.34644H21.4614C21.6909 9.34644 21.9111 9.43761 22.0733 9.59989C22.2356 9.76218 22.3268 9.98229 22.3268 10.2118V12.8079ZM23.1922 14.5386H12.8079V24.9229H23.1922V14.5386ZM15.4039 17.1347H17.1347V22.3268H15.4039V17.1347ZM18.8654 17.1347H20.5961V22.3268H18.8654V17.1347ZM15.4039 11.0771V12.8079H20.5961V11.0771H15.4039Z" fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_7_21660">
-                                        <rect width="20.7686" height="20.7686" fill="white" transform="translate(7.61572 7.61572)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                    </div>
-
-                </div>
+                }
 
             </section>
         </main>

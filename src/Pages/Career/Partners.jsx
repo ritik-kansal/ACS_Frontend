@@ -1,11 +1,52 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner';
 import './CareerStyle.css';
 import ServiceBox from '../../Components/serviceBox/ServiceBox';
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
+import { AuthContext } from '../../contexts/AuthContext';
+import { API_PARTNER } from '../../config';
+import axios from 'axios';
 
 const Partners = () => {
+
+    const partners = [
+        'Sub Contractor',
+        'Joint Venture',
+        'Prime Contractor',
+    ]
+
+    const defaultPartner = {
+        name: "",
+        organisation: "",
+        region: "",
+        message: "",
+        email: "",
+        phone_number: "",
+        partners: partners[0],
+    }
+
+
+    const [partner, setPartner] = useState(defaultPartner);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const onSave = async (e) => {
+
+        e.preventDefault();
+        const res = await axios.post(API_PARTNER, partner);
+
+        if (res.status === 200) {
+            setPartner(defaultPartner);
+            setIsSubmitted(true);
+        }
+        else {
+            setPartner(defaultPartner);
+            setIsSubmitted(false);
+        }
+    }
+
+
+
     return (
         <>
             <CommonSubBanner currentPage={'Opportunities'} activePage={'Partners'} className={'partnerBG'} heading={'Partners'} text={'You can join us as paartners by filling the form.'} />
@@ -21,20 +62,34 @@ const Partners = () => {
                     </div>
 
                     <section className="multiLevelFormWrap">
-                        <form action="" className='whiteForm'>
+                        <form onSubmit={onSave} className='whiteForm'>
                             <h3 className="heading-4">Let’s connect to find out what the power of our partnerships can do for you.</h3>
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Name'} />
+                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Name'} value={partner.name} onChange={(e) => setPartner({ ...partner, name: e.target.value })} />
+                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Email'} value={partner.email} onChange={(e) => setPartner({ ...partner, email: e.target.value })} />
+                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Organization'} value={partner.organisation} onChange={(e) => setPartner({ ...partner, organisation: e.target.value })} />
+                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Phone Number'} value={partner.phone_number} onChange={(e) => setPartner({ ...partner, phone_number: e.target.value })} />
+                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Region'} value={partner.region} onChange={(e) => setPartner({ ...partner, region: e.target.value })} />
+                            <div className="formGroup talentForm partner-select">
+
+                                <select required={true} id="options1" name="options1" className="selectBox" value={partner.partners} onChange={(e) => setPartner({ ...partner, partners: e.target.value })}>
+                                    {
+                                        partners.map((partner, index) => {
+                                            return <option key={index} value={partner}>{partner}</option>
+                                        })
+                                    }
+                                </select>
+                            </div>
+                            <textarea className='sameDesignTextArea mt-20' placeholder='Message' name="" id="" cols="10" rows="10"></textarea>
+
                             <div className="btnWraperCenter">
-                                <Button className={'HeroButton mt-20'} name={'Submit'} />
+                                <Button type="submit" className={'HeroButton mt-20'} name={'Submit'} />
                             </div>
                         </form>
+                        {
+                            isSubmitted && <div className="successMsg">
+                                <h3 className="heading-4">Thank you for your interest in partnering with us. We will get back to you shortly.</h3>
+                            </div>
+                        }
                     </section>
 
                 </div>

@@ -1,22 +1,23 @@
-.formGroup input{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    padding: 12px;
-    height: 58px;
-    width: 100%;
-    background: #F3F3F3;
-    border: none;
+.formGroup input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 12px;
+  height: 58px;
+  width: 100%;
+  background: #f3f3f3;
+  border: none;
+  border-radius: 12px;
 }
 
 .formGroup input:focus,
-.formGroup input:focus-within{
-    outline: none;
+.formGroup input:focus-within {
+  outline: none;
 }
 
-.formGroup::placeholder{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: #444444;
+.formGroup::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #444444;
 }

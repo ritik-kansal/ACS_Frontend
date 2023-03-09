@@ -7,6 +7,7 @@ import './HomeStyle.css';
 import 'swiper/css';
 import { Navigation } from 'swiper';
 import { API_JOB } from '../../config';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -15,7 +16,8 @@ const Home = () => {
   const getJobs = async () => {
     const res = await axios.get(API_JOB)
     console.log(res.data['jobs'])
-    setJobs(res.data['jobs'])
+    // slice the array to get the first 3 jobs
+    setJobs(res.data['jobs'].slice(0, 4))
   }
 
   useEffect(() => {
@@ -41,7 +43,7 @@ const Home = () => {
                   ACS is focused on client satisfaction -we aim to fulfill our client’s needs with quality and precision, while also being punctual.
                   ACS also prides itself in client confidentiality and security.
                 </p>
-                <Button className={'mt-30 HeroButton'} name={'Get in Touch'} />
+                <Link to="/contact"><Button className={'mt-30 HeroButton'} name={'Get in Touch'} /></Link>
               </div>
             </div>
           </SwiperSlide>
@@ -55,7 +57,7 @@ const Home = () => {
                   ACS is able to provide a superior client experience to our customersby collaborating with Partners. We are able
                   to provide quality at scaleand value through our network of partners.
                 </p>
-                <Button className={'mt-30 HeroButton'} name={'Get in Touch'} />
+                <Link to="/contact"><Button className={'mt-30 HeroButton'} name={'Get in Touch'} /></Link>
               </div>
             </div>
           </SwiperSlide>
@@ -69,7 +71,7 @@ const Home = () => {
                   ACS offers a comprehensive benefits package to its employees.You can be part of a close-knit team while enjoying
                   perkstypical of a large enterprise.
                 </p>
-                <Button className={'mt-30 HeroButton'} name={'Get in Touch'} />
+                <Link to="/contact"><Button className={'mt-30 HeroButton'} name={'Get in Touch'} /></Link>
               </div>
             </div>
           </SwiperSlide>
@@ -86,12 +88,12 @@ const Home = () => {
           </div>
 
           <div className="x3BoxWrap mt-60">
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Business Process Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Infrastructure Management Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Cloud Management Services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'Staff Augmentation services'} />
-            <ServiceBox src={'./assets/img/code.png'} text={'ERP/SAP Services'} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} link={"/services/ETS"} />
+            <ServiceBox src={'./assets/img/s2.png'} text={'Business Process Services'} link={"/services/BPS"} />
+            <ServiceBox src={'./assets/img/s3.png'} text={'Infrastructure Management Services'} link={"/services/Infra"} />
+            <ServiceBox src={'./assets/img/s4.png'} text={'Cloud Management Services'} link={"/services/Cloud"} />
+            <ServiceBox src={'./assets/img/s5.png'} text={'Staff Augmentation services'} link={"/services/StaffAugmentation"} />
+            <ServiceBox src={'./assets/img/s6.png'} text={'ERP/SAP \n Services'} link={"/services/ERP"} />
           </div>
 
         </div>
@@ -100,7 +102,7 @@ const Home = () => {
       <section className="breakerBlack">
         <div className="container">
           <h2 className="breakerHeading">Are you interested to work with us ?</h2>
-          <Button className={'HeroButton'} name={'Contact Us'} />
+          <Link to="/contact"><Button className={'HeroButton'} name={'Contact Us'} /></Link>
         </div>
       </section>
 
@@ -122,7 +124,7 @@ const Home = () => {
                 effectively as possible.</p>
               <p className="text-2 mt-15">ACS strives to improve life for communities across New York state by modernizing government
                 systems. ACS doesn’t just look to get the job done - we aim to exceed our client’s expectations.</p>
-              <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
+              <Link to="/contact"><Button className={'HeroButton mt-40'} name={'Get in Touch'} /></Link>
             </div>
           </div>
         </div>
@@ -161,7 +163,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor."</p>
                   <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="./assets/img/p2.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -174,20 +176,7 @@ const Home = () => {
                 <div className="testimonialsBox">
                   <p className="testminoal">"Release facebook responsive web design business model canvas seed money monetization."</p>
                   <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
-                    <span className="testimonialDetail">
-                      <h5 className="testiName">Albus Dumbledore</h5>
-                      <span className="textTesti">Manager @ Howarts</span>
-                    </span>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="testimonialsBox">
-                  <p className="testminoal">"Buyer buzz partner network disruptive non-disclosure agreement business"</p>
-                  <div className="testimonialBox mt-40">
-                    <img src="./assets/img/userDemo.png" alt="" className="testimonialimg" />
+                    <img src="./assets/img/p3.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>
@@ -229,7 +218,7 @@ const Home = () => {
                       <td>{item.location}</td>
                       <td>{item.required_exp}</td>
                       <td>
-                        <a href="" className="redlink">Apply Now
+                        <Link to={`/getaJob/${item.id}`} className="redlink">Apply Now
                           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_26_12)">
                               <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
@@ -240,7 +229,7 @@ const Home = () => {
                               </clipPath>
                             </defs>
                           </svg>
-                        </a>
+                        </Link>
                       </td>
                     </tr>
                   )
@@ -248,6 +237,9 @@ const Home = () => {
               }
             </tbody>
           </table>
+          <div className='flexBox justify-center'>
+            <Link to="/jobOpening"><Button className={'mt-30 HeroButton'} name={'View All'} /></Link>
+          </div>
 
         </div>
       </section>

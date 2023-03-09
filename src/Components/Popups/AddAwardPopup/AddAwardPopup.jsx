@@ -6,7 +6,7 @@ import Button from '../../Button/Button';
 import Input from '../../Input/Input';
 import './AddAwardPopupStyle.css';
 
-const AddAwardPopup = ({ isActive, onClose }) => {
+const AddAwardPopup = ({ isActive, onClose, getExperiences }) => {
 
   const [heading, setHeading] = useState('');
   const [files, setFiles] = useState([]);
@@ -34,6 +34,7 @@ const AddAwardPopup = ({ isActive, onClose }) => {
       }
     }).then((res) => {
       console.log(res);
+      getExperiences();
       setFiles([]);
       setHeading('');
       onClose();

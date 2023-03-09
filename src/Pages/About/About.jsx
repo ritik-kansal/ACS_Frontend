@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Button from '../../Components/Button/Button';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner'
 import ServiceBox from '../../Components/serviceBox/ServiceBox';
@@ -27,7 +28,7 @@ const About = () => {
                                 effectively as possible.</p>
                             <p className="text-2 mt-15">ACS strives to improve life for communities across New York state by modernizing government
                                 systems. ACS doesn’t just look to get the job done - we aim to exceed our client’s expectations.</p>
-                            <Button className={'HeroButton mt-40'} name={'Get in Touch'} />
+                            <Link to='/contact'><Button className={'HeroButton mt-40'} name={'Get in Touch'} /></Link>
                         </div>
                     </div>
                 </div>
@@ -37,7 +38,7 @@ const About = () => {
                 <div className="container">
                     <div className="flexBox">
 
-                        <div className="aboutLeft shadowLeft">
+                        <div className="aboutLeft shadowRight">
                             <img src="./assets/img/aboutUs.png" alt="" />
                         </div>
 

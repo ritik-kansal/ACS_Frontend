@@ -1,9 +1,10 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import AdminSideMenu from '../../Components/AdminSideMenu/AdminSideMenu';
 import AddJobPopup from '../../Components/Popups/AddJobPopup/AddJobPopup';
 import { API_JOB } from '../../config';
+import { AuthContext } from '../../contexts/AuthContext';
 import AdminHeader from '../../Layouts/AdminHeader/AdminHeader';
 import './JobsStyle.css';
 
@@ -13,11 +14,24 @@ const Jobs = () => {
 
     const [jobs, setJobs] = useState([]);
 
+    const { user } = useContext(AuthContext);
+
     const getJobs = async () => {
         const res = await axios.get(API_JOB)
         console.log(res.data['jobs'])
         setJobs(res.data['jobs'])
     }
+
+    const deleteJob = async (id) => {
+        const res = await axios.delete(`${API_JOB}/${id}`, {
+            headers: {
+                'Authorization': `Bearer ${user.access_token}`
+            }
+        });
+        console.log(res.data)
+        getJobs();
+    }
+
 
     useEffect(() => {
         getJobs();
@@ -45,7 +59,7 @@ const Jobs = () => {
                                 <td>{job.position}</td>
                                 <td>{job.location}</td>
                                 <td>{job.required_exp}</td>
-                                <td>
+                                <td className='flexbox'>
                                     <Link to={`/admin-jobsDetail/${job.id}`} className="redlink">Details
                                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_26_12)">
@@ -58,6 +72,8 @@ const Jobs = () => {
                                             </defs>
                                         </svg>
                                     </Link>
+
+                                    <img src="/assets/svg/delete.svg" alt="" onClick={() => deleteJob(job.id)} />
                                 </td>
                             </tr>
                         ))}

@@ -1,57 +1,61 @@
-.blackBox{
-    height: calc(100vh - 80px);
-    width: 100%;
-    margin-top: 80px;
-    background: #000;
-    overflow: auto;
-    padding: 30px;
+.blackBox {
+  height: calc(100vh - 80px);
+  width: 100%;
+  margin-top: 80px;
+  background: #000;
+  overflow: auto;
+  padding: 30px;
 }
 
-.detailListWrap{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: relative;
+.detailListWrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
 }
 /* 
 .detailListWrap:not(:first-child){
     padding-top: 24px;
 } */
 
-.detailListWrap:not(:last-child){
-    margin-bottom: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #606060;
+.b-top {
+  border-top: 1px solid #606060;
 }
 
-.detailList{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    color: #fff;
-    max-width: calc(50% - 5px);
-    width: 100%;
+.detailListWrap:not(:last-child) {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #606060;
 }
 
-.detailList strong{
-    font-weight: 500;
+.detailList {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  max-width: calc(50% - 5px);
+  width: 100%;
 }
 
-.detailList span{
-    font-weight: 300;
+.detailList strong {
+  font-weight: 500;
 }
 
-.floatingIcons span{
-    display: block;
-    position: relative;
-    line-height: 0;
-    cursor: pointer;
+.detailList span {
+  font-weight: 300;
 }
 
-.floatingIcons{
-    position: absolute;
-    right: 0;
-    top: 0;
+.floatingIcons span {
+  display: block;
+  position: relative;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.floatingIcons {
+  position: absolute;
+  right: 0;
+  top: 0;
 }

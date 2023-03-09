@@ -42,7 +42,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className="container">
+            <div className={`container ${location.pathname === '/contact' ? 'contact' : ''}`}>
 
                 <div className="topLevelFooter flexBox">
 
@@ -91,7 +91,7 @@ const Footer = () => {
 
                     </div>
 
-                    {location.pathname !== "./contact" ?
+                    {location.pathname !== "/contact" ?
 
                         <div className="topLevelRight">
                             <form onSubmit={onSave} className='whiteForm'>
@@ -109,15 +109,19 @@ const Footer = () => {
                         :
 
                         <div className="topLevelRight">
-                            <form action="" className='whiteForm'>
+                            <form onSubmit={onSave} className='whiteForm'>
 
-                                <Input className={'mt-20'} type={'text'} placeholder={'Name'} />
-                                <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} />
-                                <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} />
-                                <Input className={'mt-20'} type={'text'} placeholder={'Query'} />
-                                <Textarea className={'mt-20'} placeholder={'Write Message'} />
+                                <Input className={'mt-20'} type={'text'} placeholder={'Name'} value={getInTouch.name} onChange={(e) => setGetInTouch({ ...getInTouch, name: e.target.value })} />
+                                <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} value={getInTouch.email} onChange={(e) => setGetInTouch({ ...getInTouch, email: e.target.value })} />
+                                <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} value={getInTouch.phone} onChange={(e) => setGetInTouch({ ...getInTouch, phone: e.target.value })} />
+                                <Input className={'mt-20'} type={'text'} placeholder={'Query'} value={getInTouch.query} onChange={(e) => setGetInTouch({ ...getInTouch, query: e.target.value })} />
+                                <textarea className='sameDesignTextArea mt-20' placeholder='Description' name="" id="" cols="10" rows="10"
+                                    onChange={(e) => setGetInTouch({ ...getInTouch, message: e.target.value })} value={getInTouch.message}
+                                ></textarea>
                                 <Button className={'HeroButton mt-20'} name={'Submit'} />
-
+                                {
+                                    msgSent == true && <div className="msgSent">Message Sent</div>
+                                }
                             </form>
                         </div>
 
@@ -151,7 +155,7 @@ const Footer = () => {
                 </div>
 
             </div>
-        </footer>
+        </footer >
     )
 }
 

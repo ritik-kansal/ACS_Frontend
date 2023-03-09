@@ -23,33 +23,33 @@ const GovernmentService = () => {
                     <div className="x4Wrapper flexBox mt-40">
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="./assets/img/c1.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/c2.png" alt="" />
+                            <div className="text-3">Women-Owned Small Business certified</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/c3.png" alt="" />
+                            <div className="text-3">Economically Disadvantaged Women-Owned Small Business </div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/c4.png" alt="" />
+                            <div className="text-3">New York State & NYC Certified Women Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/c5.png" alt="" />
+                            <div className="text-3">8a Certified Company</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/c6.png" alt="" />
+                            <div className="text-3">Small Business Enterprise (SBE)</div>
                         </div>
 
                     </div>
@@ -59,34 +59,26 @@ const GovernmentService = () => {
                     <div className="x4Wrapper flexBox mt-40">
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
+                            <img src="./assets/img/s1.png" alt="" />
                             <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/sin2.png" alt="" />
+                            <div className="text-3">Women-Owned Small Business certified</div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/sin3.png" alt="" />
+                            <div className="text-3">Economically Disadvantaged Women-Owned Small Business </div>
                         </div>
 
                         <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
+                            <img src="./assets/img/sin4.png" alt="" />
+                            <div className="text-3">New York State & NYC Certified Women Business Enterprise</div>
                         </div>
 
-                        <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
-                        </div>
 
-                        <div className="boxBusiness">
-                            <img src="./assets/img/demoUser.png" alt="" />
-                            <div className="text-3">New York State & NYC Certified Minority Business Enterprise</div>
-                        </div>
 
                     </div>
 

@@ -12,7 +12,7 @@ const AdminSideMenu = ({ value }) => {
         <li className={value == 'govermentExperiences' ? 'active' : ''}><Link to="/admin-govermentExperiences">Government Experiences</Link></li>
         <li className={value == 'partnerForm' ? 'active' : ''}><Link to="/admin-partnerForm">Partners Form</Link></li>
         <li className={value == 'talentCommunity' ? 'active' : ''}><Link to="/admin-talentCommunity">Talent Community</Link></li>
-        <li className={value == 'getInTouch' ? 'active' : ''}><Link to="/#">Get in touch</Link></li>
+        <li className={value == 'getInTouch' ? 'active' : ''}><Link to="/admin-getInTouch">Get in touch</Link></li>
         <li className={value == 'jobs' ? 'active' : ''}><Link to="/admin-jobs">Jobs</Link></li>
       </ul>
     </div>
