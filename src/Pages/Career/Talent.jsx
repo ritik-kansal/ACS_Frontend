@@ -72,11 +72,11 @@ const Talent = () => {
                             <Input className={'talentForm'} type={'text'} placeholder={'First Name'} value={talent.first_name} onChange={(e) => setTalent({ ...talent, first_name: e.target.value })} />
                             <Input className={'talentForm'} type={'text'} placeholder={'Last Name'} value={talent.last_name} onChange={(e) => setTalent({ ...talent, last_name: e.target.value })} />
                             <Input className={'talentForm'} type={'email'} placeholder={'Email id'} value={talent.email} onChange={(e) => setTalent({ ...talent, email: e.target.value })} />
-                            <Input className={'talentForm'} type={'text'} placeholder={'Phone Number'} value={talent.phone} onChange={(e) => setTalent({ ...talent, phone: e.target.value })} />
+                            <Input className={'talentForm'} type={'text'} placeholder={'Phone Number'} value={talent.phone} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setTalent({ ...talent, phone: e.target.value }) } }} />
                             <Input className={'talentForm'} type={'text'} placeholder={'Current Employee'} value={talent.current_employee} onChange={(e) => setTalent({ ...talent, current_employee: e.target.value })} />
                             <Input className={'talentForm'} type={'text'} placeholder={'Current Designation'} value={talent.current_designation} onChange={(e) => setTalent({ ...talent, current_designation: e.target.value })} />
 
-                            <Input className={'talentForm'} type={'file'} placeholder={'Upload Resume'} value={fileValue} onChange={handleFileChange} />
+                            <Input className={'talentForm'} type={'file'} placeholder={'Upload Resume'} value={fileValue} onChange={handleFileChange} accept={"application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"} />
                             <div className="btnWraperCenter">
                                 <Button type="submit" className={'HeroButton mt-20'} name={'Submit'} />
                             </div>

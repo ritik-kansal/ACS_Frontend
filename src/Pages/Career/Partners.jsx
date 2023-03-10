@@ -67,7 +67,7 @@ const Partners = () => {
                             <Input required={true} className={'talentForm'} type={'text'} placeholder={'Name'} value={partner.name} onChange={(e) => setPartner({ ...partner, name: e.target.value })} />
                             <Input required={true} className={'talentForm'} type={'text'} placeholder={'Email'} value={partner.email} onChange={(e) => setPartner({ ...partner, email: e.target.value })} />
                             <Input required={true} className={'talentForm'} type={'text'} placeholder={'Organization'} value={partner.organisation} onChange={(e) => setPartner({ ...partner, organisation: e.target.value })} />
-                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Phone Number'} value={partner.phone_number} onChange={(e) => setPartner({ ...partner, phone_number: e.target.value })} />
+                            <Input required={true} className={'talentForm'} type={'text'} placeholder={'Phone Number'} value={partner.phone_number} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setPartner({ ...partner, phone_number: e.target.value }) } }} />
                             <Input required={true} className={'talentForm'} type={'text'} placeholder={'Region'} value={partner.region} onChange={(e) => setPartner({ ...partner, region: e.target.value })} />
                             <div className="formGroup talentForm partner-select">
 
@@ -79,7 +79,7 @@ const Partners = () => {
                                     }
                                 </select>
                             </div>
-                            <textarea className='sameDesignTextArea mt-20' placeholder='Message' name="" id="" cols="10" rows="10"></textarea>
+                            <textarea className='sameDesignTextArea mt-20' placeholder='Message' name="" id="" cols="10" rows="10" value={partner.message} onChange={(e) => setPartner({ ...partner, message: e.target.value })}></textarea>
 
                             <div className="btnWraperCenter">
                                 <Button type="submit" className={'HeroButton mt-20'} name={'Submit'} />

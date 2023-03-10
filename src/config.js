@@ -1,4 +1,5 @@
-export const API_BASE_URL = "http://127.0.0.1:5000/api";
+// export const API_BASE_URL = "http://127.0.0.1:5000/api";
+export const API_BASE_URL = "http://3.144.18.217//api";
 export const API_LOGIN_URL = `${API_BASE_URL}/login`;
 export const API_LOGOUT_URL = `${API_BASE_URL}/logout`;
 
