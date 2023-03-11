@@ -1,28 +1,28 @@
-.button{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 29px;
-    padding: 16px 32px;
-    border: 1px solid transparent;
-    background: transparent;
-    color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28.8px;
+  padding: 12px 32px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.button img{
-    max-width: 14px;
+.button img {
+  max-width: 14px;
 }
 
-.iconButton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 4px;
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 4px;
 }
 
-.HeroButton{
-    background: #FF364C;
-    color: #fff;
+.HeroButton {
+  background: #ff364c;
+  color: #fff;
 }

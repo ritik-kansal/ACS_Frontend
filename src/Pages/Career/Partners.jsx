@@ -7,6 +7,7 @@ import Button from '../../Components/Button/Button';
 import { AuthContext } from '../../contexts/AuthContext';
 import { API_PARTNER } from '../../config';
 import axios from 'axios';
+import Header from '../../Layouts/Header/Header';
 
 const Partners = () => {
 
@@ -49,6 +50,7 @@ const Partners = () => {
 
     return (
         <>
+            <Header page={'job'} />
             <CommonSubBanner currentPage={'Opportunities'} activePage={'Partners'} className={'partnerBG'} heading={'Partners'} text={'You can join us as paartners by filling the form.'} />
             <section className="gradientBG partnerWrapper">
                 <div className="container">

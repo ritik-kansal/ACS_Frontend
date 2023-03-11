@@ -5,6 +5,7 @@ import Button from '../../Components/Button/Button';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner';
 import Input from '../../Components/Input/Input';
 import { API_APPLICANTS, API_JOB } from '../../config';
+import Header from '../../Layouts/Header/Header';
 import './CareerStyle.css';
 
 const GetJob = () => {
@@ -73,6 +74,7 @@ const GetJob = () => {
 
     return (
         <>
+            <Header page={'job'} />
             <CommonSubBanner currentPage={'Opportunities > Current Job Openings'} activePage={'Peoplesoft Functional Supply Chain Manager'} className={'careerBanner'} />
             <section className="gradientBG">
                 <div className="container">

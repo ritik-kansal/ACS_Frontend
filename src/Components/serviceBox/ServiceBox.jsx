@@ -7,7 +7,7 @@ const serviceBox = ({ src, text, onclick, detail, link }) => {
     <div className="servciceBox">
       <img src={src} alt="" />
       <h1 className="serviceHeading">{text.split('\n').map((line, index) => <span key={index}>{line}<br /></span>)}</h1>
-      <span onClick={onclick} ><Link to={link} className="readMore">Read More</Link></span>
+      <span onClick={onclick} className="readMore"><Link to={link} className="readMore">Read More</Link></span>
       {detail && <p className="serviceDetail">{detail}</p>}
     </div>
   )

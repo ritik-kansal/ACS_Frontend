@@ -4,6 +4,7 @@ import Button from '../../Components/Button/Button';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner';
 import Input from '../../Components/Input/Input';
 import { API_TALENT } from '../../config';
+import Header from '../../Layouts/Header/Header';
 import './CareerStyle.css';
 
 const Talent = () => {
@@ -62,6 +63,7 @@ const Talent = () => {
 
     return (
         <>
+            <Header page={'job'} />
             <CommonSubBanner currentPage={'Opportunities'} activePage={'Talent Community'} className={'talentBanner'} heading={'Talent Community'} text={'You can join our talent community by filling the form.'} />
             <div className="talentWrapper gradientBG">
                 <div className="container">

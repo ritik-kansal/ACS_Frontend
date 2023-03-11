@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner'
 import { API_GOVERNMENT_EXPERIENCE_URL } from '../../config';
+import Header from '../../Layouts/Header/Header';
 import './GovernmentServiceStyle.css';
 
 const GovernmentExperience = () => {
@@ -19,6 +20,7 @@ const GovernmentExperience = () => {
 
     return (
         <>
+            <Header page={'gov'} />
             <CommonSubBanner currentPage={'Government'} activePage={'Government Experiences'} className={'governmentBanner'} heading={'Government Experiences'} text={'All certification we have in our showcase are below.'} />
             <section className="gradientBG governmentWrapper">
                 <div className="container">

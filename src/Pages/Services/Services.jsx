@@ -4,6 +4,7 @@ import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner'
 import './servicesStyle.css';
 
 import { Link, useParams } from 'react-router-dom';
+import Header from '../../Layouts/Header/Header';
 
 const Services = () => {
 
@@ -362,6 +363,7 @@ const Services = () => {
 
     return (
         <>
+            <Header page={'service'} />
             <CommonSubBanner className={'serviceBanner'} heading={'Our Services'} text={'Scale up your business growth with highly robust.'} />
             {!loading &&
                 <>

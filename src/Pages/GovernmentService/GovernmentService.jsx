@@ -1,10 +1,12 @@
 import React from 'react'
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner';
+import Header from '../../Layouts/Header/Header';
 import './GovernmentServiceStyle.css';
 
 const GovernmentService = () => {
     return (
         <>
+            <Header page={'gov'} />
             <CommonSubBanner currentPage={'Government'} activePage={'Government Certificates'} className={'governmentBanner'} heading={'Government Certificates'} text={'All certification we have in our showcase are below.'} />
             <section className="gradientBG governmentWrapper">
                 <div className="container">

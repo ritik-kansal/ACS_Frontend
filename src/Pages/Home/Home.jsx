@@ -8,6 +8,7 @@ import 'swiper/css';
 import { Navigation } from 'swiper';
 import { API_JOB } from '../../config';
 import { Link } from 'react-router-dom';
+import Header from '../../Layouts/Header/Header';
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
 
   return (
     <>
+      <Header page={'home'} />
       <div className="swiperMain">
         <Swiper className='swiper2'
           spaceBetween={0}
@@ -88,11 +90,11 @@ const Home = () => {
           </div>
 
           <div className="x3BoxWrap mt-60">
-            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology Services'} link={"/services/ETS"} />
-            <ServiceBox src={'./assets/img/s2.png'} text={'Business Process Services'} link={"/services/BPS"} />
-            <ServiceBox src={'./assets/img/s3.png'} text={'Infrastructure Management Services'} link={"/services/Infra"} />
-            <ServiceBox src={'./assets/img/s4.png'} text={'Cloud Management Services'} link={"/services/Cloud"} />
-            <ServiceBox src={'./assets/img/s5.png'} text={'Staff Augmentation services'} link={"/services/StaffAugmentation"} />
+            <ServiceBox src={'./assets/img/code.png'} text={'Enterprise Technology \n Services'} link={"/services/ETS"} />
+            <ServiceBox src={'./assets/img/s2.png'} text={'Business Process \n Services'} link={"/services/BPS"} />
+            <ServiceBox src={'./assets/img/s3.png'} text={'Infrastructure Management \n Services'} link={"/services/Infra"} />
+            <ServiceBox src={'./assets/img/s4.png'} text={'Cloud Management \n Services'} link={"/services/Cloud"} />
+            <ServiceBox src={'./assets/img/s5.png'} text={'Staff Augmentation \n services'} link={"/services/StaffAugmentation"} />
             <ServiceBox src={'./assets/img/s6.png'} text={'ERP/SAP \n Services'} link={"/services/ERP"} />
           </div>
 
@@ -108,7 +110,7 @@ const Home = () => {
 
       <section className='gradientBG aboutWrapper'>
         <div className="container">
-          <div className="flexBox">
+          <div className="flexBox items-center">
 
             <div className="aboutLeft shadowLeft">
               <img src="./assets/img/aboutUs.png" alt="" />
@@ -131,7 +133,7 @@ const Home = () => {
       </section>
 
       <section className="testimonila">
-        <div className="container">
+        <div className="">
 
           <div className="topDetails">
             <h1 className="commonHeading">Testimonials</h1>
@@ -140,6 +142,7 @@ const Home = () => {
 
           <div className="swiperBox mt-40">
             <Swiper
+              className='container'
               spaceBetween={30}
               slidesPerView={3}
               navigation={true} modules={[Navigation]}
@@ -204,7 +207,7 @@ const Home = () => {
             <thead>
               <tr>
                 <th>Position</th>
-                <th>location</th>
+                <th>Location</th>
                 <th>Experience</th>
                 <th>Action</th>
               </tr>

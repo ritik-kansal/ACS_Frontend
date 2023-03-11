@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import Button from '../../Components/Button/Button';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner'
 import ServiceBox from '../../Components/serviceBox/ServiceBox';
+import Header from '../../Layouts/Header/Header';
 import './AboutStyle.css';
 
 const About = () => {
     return (
         <>
+            <Header page={'about'} />
             <CommonSubBanner className={'AboutBG'} heading={'About Us'} text={'Here everything about us who we are is described.'} />
 
             <section className='gradientBG aboutWrapper'>

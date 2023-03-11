@@ -35,17 +35,6 @@ function App() {
     <>
       <ScrollToTop />
       <div className="appContainer">
-        {location.pathname !== "/admin" ||
-        location.pathname !== "/admin-govermentExperiences" ||
-        location.pathname !== "/admin-partnerForm" ||
-        location.pathname !== "/admin-talentCommunity" ||
-        location.pathname !== "/admin-jobs" ||
-        location.pathname !== "/admin-getInTouch" ||
-        !location.pathname.startsWith("/admin-jobsDetail") ? (
-          <Header />
-        ) : (
-          <></>
-        )}
         <main className={location.pathname === "/contact" ? "bg_black" : ""}>
           {isAuthenticated && (
             <Routes>

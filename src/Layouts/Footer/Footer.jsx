@@ -140,7 +140,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footerSocial flexBox">
-                    <p className="footerText">© 2022  ACS Consultancy Services. All Rights Reserved.</p>
+                    <p className="footerText footerText2">© 2022  ACS Consultancy Services. All Rights Reserved.</p>
                     <div className="socialIcons">
                         <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" y="0.984863" width="45" height="45.0001" rx="22.5" stroke="white" />

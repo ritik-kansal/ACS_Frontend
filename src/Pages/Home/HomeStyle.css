@@ -9,21 +9,22 @@
 
 .siderText {
   position: absolute;
-  bottom: 200px;
+  bottom: 245px;
   left: 160px;
   max-width: 600px;
   color: #fff;
 }
 
 .heroText {
-  font-weight: 900;
-  font-size: 50px;
+  font-weight: 800;
+  font-size: 40px;
   line-height: 120%;
+  margin-bottom: 12px;
 }
 
 .heroDetail {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 170%;
 }
 
@@ -83,14 +84,15 @@ section {
 
 .commonHeading {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 36px;
   line-height: 130%;
 }
 
 .commonText {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
+  color: #d6d6d6;
 }
 
 .x3BoxWrap {
@@ -103,7 +105,7 @@ section {
 
 .breakerHeading {
   font-weight: 600;
-  font-size: 41px;
+  font-size: 32px;
   line-height: 28px;
   color: #fff;
 }
@@ -121,14 +123,14 @@ section {
 
 .heading-2 {
   font-weight: 700;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 120%;
 }
 
 .text-2 {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height: 200%;
 }
 
 .flexBox {
@@ -183,13 +185,17 @@ section {
 }
 
 .swiperBox {
-  max-width: 1140px;
+  /* max-width: 1140px; */
   margin: 0 auto;
+}
+
+.swiperBox .swiper {
+  padding: 0 100px !important;
 }
 
 .testminoal {
   font-weight: 400;
-  font-size: 24.6857px;
+  font-size: 20px;
   line-height: 37px;
 }
 
@@ -202,21 +208,22 @@ section {
 }
 
 .testiName {
-  font-weight: 600;
-  font-size: 18.46px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 33px;
   color: #ff364c;
 }
 
 .textTesti {
   font-weight: 400;
-  font-size: 14.4px;
+  font-size: 14px;
   line-height: 33px;
 }
 
 .commonTable {
   width: 100%;
   color: #fff;
+  border-collapse: collapse;
 }
 
 .commonTable thead {
@@ -226,14 +233,26 @@ section {
 
 .commonTable thead th {
   padding: 10px 16px;
+  font-weight: 400;
+  width: 20%;
+  color: #e7e7e7;
+}
+
+.commonTable thead th:first-child,
+.commonTable tbody td:first-child {
+  width: 40%;
+}
+
+.commonTable tbody td:first-child {
+  font-weight: 500;
 }
 
 .commonTable tbody td {
   padding: 25px 16px;
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   border-bottom: 1px solid #999;
+  width: 20%;
 }
 
 .redlink {
@@ -243,4 +262,8 @@ section {
   gap: 10px;
   text-decoration: none;
   color: #ff364c;
+}
+
+.items-center {
+  align-items: center;
 }

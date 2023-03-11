@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner'
 import Input from '../../Components/Input/Input'
 import { API_JOB } from '../../config';
+import Header from '../../Layouts/Header/Header';
 import './CareerStyle.css';
 
 const Career = () => {
@@ -53,6 +54,7 @@ const Career = () => {
 
   return (
     <>
+      <Header page={'job'} />
       <CommonSubBanner currentPage={'Opportunities'} activePage={'Current Job Openings'} className={'careerBanner'} heading={'Current Job Openings'} text={'We are looking for talented professionals to join our team. The following areas are where we have immediate needs.'} />
       <section className="gradientBG">
         <div className="container">

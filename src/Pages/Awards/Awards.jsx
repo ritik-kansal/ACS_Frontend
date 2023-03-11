@@ -1,10 +1,12 @@
 import React from 'react'
 import CommonSubBanner from '../../Components/CommonSubBanner/CommonSubBanner';
+import Header from '../../Layouts/Header/Header';
 import './AwardsStyle.css';
 
 const Awards = () => {
     return (
         <>
+            <Header page={'insight'} />
             <CommonSubBanner currentPage={'Insight'} activePage={'Awards'} className={'AwardBG'} heading={'Awards'} text={'All Headlines of us that represent us in news'} />
             <section className="gradientBG newsWrapper">
                 <div className="container">
