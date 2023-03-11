@@ -90,8 +90,8 @@ section {
 
 .commonText {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 150%;
   color: #d6d6d6;
 }
 
@@ -195,7 +195,7 @@ section {
 
 .testminoal {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
 }
 
@@ -217,7 +217,6 @@ section {
 .textTesti {
   font-weight: 400;
   font-size: 14px;
-  line-height: 33px;
 }
 
 .commonTable {

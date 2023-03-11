@@ -140,7 +140,7 @@ const Home = () => {
             <p className="commonText">We feel honored when our clients appreciate our work. It is not a surprise that most of them keep <br /> coming back to us. Have a look at what some of them have to say about ACS.</p>
           </div>
 
-          <div className="swiperBox mt-40">
+          <div className="swiperBox mt-50">
             <Swiper
               className='container'
               spaceBetween={30}
