@@ -59,21 +59,23 @@ const Jobs = () => {
                                 <td>{job.position}</td>
                                 <td>{job.location}</td>
                                 <td>{job.required_exp}</td>
-                                <td className='flexbox'>
-                                    <Link to={`/admin-jobsDetail/${job.id}`} className="redlink">Details
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_26_12)">
-                                                <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_26_12">
-                                                    <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </Link>
+                                <td >
+                                    <div className="flexbox" style={{ gap: 80 }}>
+                                        <Link to={`/admin-jobsDetail/${job.id}`} className="redlink">Details
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_26_12)">
+                                                    <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_26_12">
+                                                        <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </Link>
 
-                                    <img src="/assets/svg/delete.svg" alt="" onClick={() => deleteJob(job.id)} />
+                                        <img src="/assets/svg/delete.svg" alt="" onClick={() => deleteJob(job.id)} />
+                                    </div>
                                 </td>
                             </tr>
                         ))}

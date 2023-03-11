@@ -24,7 +24,7 @@
 
 .heroDetail {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 170%;
 }
 
@@ -129,7 +129,7 @@ section {
 
 .text-2 {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 200%;
 }
 
@@ -195,8 +195,8 @@ section {
 
 .testminoal {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 37px;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .testimonialBox {
@@ -236,6 +236,7 @@ section {
   font-weight: 400;
   width: 20%;
   color: #e7e7e7;
+  font-size: 14px;
 }
 
 .commonTable thead th:first-child,
@@ -253,6 +254,7 @@ section {
   line-height: 30px;
   border-bottom: 1px solid #999;
   width: 20%;
+  font-size: 16px;
 }
 
 .redlink {
