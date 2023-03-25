@@ -71,3 +71,28 @@
 .AboutBG{
     background: url('./AboutBG.png');
 }
+
+@media (max-width: 414px){
+    .commonBanner{
+        min-height: 175px;
+        max-height: 175px;
+        background-position: right;
+    }
+    .currentPage{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .headingBanner{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 120%;
+        margin-top: 5px;
+    }
+    .textBanner{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 170%;
+        margin-top: 5px;
+    }
+}

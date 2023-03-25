@@ -268,3 +268,182 @@ section {
 .items-center {
   align-items: center;
 }
+
+
+.commonTableWrapper{
+  max-width: 100%;
+  overflow: auto;
+}
+
+.mob-hide{
+  display: block;
+}
+
+.mob-visible{
+  display: none;
+}
+
+@media (max-width: 767px){
+
+  .siderText{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    max-width: 600px;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+
+  .heroText{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .heroDetail{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+  }
+
+  .mob-hide{
+    display: none;
+  }
+
+  .mob-visible{
+    display: block;
+  }
+
+  section{
+    padding: 40px 0;
+  }
+
+  .x3BoxWrap{
+    gap: 10px;
+    margin-top: 15px !important;
+  }
+
+  .servciceBox{
+    max-width: 100%;
+    background: linear-gradient(180deg, #919191 0%, #323232 100%);
+  }
+
+  .commonHeading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .commonText{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+  }
+
+  .breakerBlack .container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .breakerHeading{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .HeroButton{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  .breakerBlack a{
+    margin-top: 15px;
+  }
+  
+  .aboutRight{
+    max-width: 100%;
+  }
+
+  .aboutRight .heading-2{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .text-2{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+    margin-top: 5px !important;
+  }
+  
+  .aboutWrapper .HeroButton{
+    margin-top: 10px !important;
+  }
+
+  .commonText br{
+    display: none;
+  }
+
+  .swiperBox .swiper{
+    padding: 0 !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    display: none;
+  }
+
+  .swiperBox{
+    margin-top: 20px !important;
+  }
+
+  footer{
+    padding-top: 0;
+  }
+
+  .footerHeading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .footerText{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 175%;
+  }
+
+  .listBox svg{
+    min-width: 32px;
+    max-width: 32px;
+  }
+
+  .topLevelFooter{
+    top: -320px;
+    position: relative;
+    padding: 20px 12px;
+  }
+
+  .whiteForm{
+    margin-top: 20px;
+  }
+
+  .listBox span{
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .commonTable tbody td{
+    font-size: 14px;
+    line-height: 120%;
+    padding: 5px 5px;
+  }
+
+}

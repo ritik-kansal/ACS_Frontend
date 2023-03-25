@@ -95,3 +95,40 @@ header {
 .hideThis {
   display: none;
 }
+
+@media (max-width: 414px){
+  header{
+    background: rgba(98, 98, 98, 0.8);
+    position: static;
+  }
+
+  .navigation{
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: auto;
+    align-items: flex-start;
+    top: 80px;
+    left: -100%;
+    background: #626262;
+    transition: 0.4s ease-in-out;
+    align-content: flex-start;
+    gap: 10px;
+    z-index: 999;
+  }
+
+  .navigation.active{
+    left: 0;
+    transition: 0.4s ease-in-out;
+  }
+
+  .navItem{
+    width: 100%;
+  }
+
+  .navItem.active .navLink{
+    border-radius: 0;
+  }
+
+}

@@ -35,3 +35,20 @@
     max-width: 30px;
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    .flexBox.x4Wrapper{
+        margin-top: 12px !important;
+    }
+    .x4Wrapper .boxBusiness{
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .flexBox.x5Wrapper{
+        margin-top: 12px !important;
+    }
+    .x5Wrapper .boxBusiness{
+        max-width: 100% !important;
+        width: 100%;
+    }
+}

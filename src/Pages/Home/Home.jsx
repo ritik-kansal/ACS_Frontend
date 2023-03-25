@@ -5,7 +5,7 @@ import Button from '../../Components/Button/Button';
 import ServiceBox from '../../Components/serviceBox/ServiceBox';
 import './HomeStyle.css';
 import 'swiper/css';
-import { Navigation } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 import { API_JOB } from '../../config';
 import { Link } from 'react-router-dom';
 import Header from '../../Layouts/Header/Header';
@@ -38,7 +38,8 @@ const Home = () => {
         >
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider1BG.jpg" alt="" />
+              <img src="./assets/img/slider1BG.jpg" alt=""  className='mob-hide'/>
+              <img src="./assets/img/slider1Mob.jpg" alt=""  className='mob-visible'/>
               <div className="siderText">
                 <h1 className="heroText">Clients</h1>
                 <p className="heroDetail">
@@ -52,7 +53,8 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider2BG.png" alt="" />
+              <img src="./assets/img/slider2BG.png" alt="" className='mob-hide'/>
+              <img src="./assets/img/slider1Mob.jpg" alt=""  className='mob-visible'/>
               <div className="siderText">
                 <h1 className="heroText">Partners</h1>
                 <p className="heroDetail">
@@ -66,7 +68,8 @@ const Home = () => {
 
           <SwiperSlide>
             <div className="sliderBox">
-              <img src="./assets/img/slider3BG.png" alt="" />
+              <img src="./assets/img/slider3BG.png" alt="" className='mob-hide'/>
+              <img src="./assets/img/slider1Mob.jpg" alt=""  className='mob-visible'/>
               <div className="siderText">
                 <h1 className="heroText">Employees</h1>
                 <p className="heroDetail">
@@ -133,7 +136,7 @@ const Home = () => {
       </section>
 
       <section className="testimonila">
-        <div className="">
+        <div className="container">
 
           <div className="topDetails">
             <h1 className="commonHeading">Testimonials</h1>
@@ -143,9 +146,20 @@ const Home = () => {
           <div className="swiperBox mt-50">
             <Swiper
               className='container'
+              breakpoints={{
+                414: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 1,
+                },
+                1024:{
+                  slidesPerView: 3,
+                }
+              }}
               spaceBetween={30}
-              slidesPerView={3}
-              navigation={true} modules={[Navigation]}
+              slidesPerView={1}
+              pagination={true} modules={[Pagination]}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}>
 
@@ -203,43 +217,46 @@ const Home = () => {
               range of exciting opportunities for top-notch professionals.</p>
           </div>
 
-          <table className='commonTable mt-60'>
-            <thead>
-              <tr>
-                <th>Position</th>
-                <th>Location</th>
-                <th>Experience</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                jobs.map((item, index) => {
-                  return (
-                    <tr key={index}>
-                      <td>{item.position}</td>
-                      <td>{item.location}</td>
-                      <td>{item.required_exp}</td>
-                      <td>
-                        <Link to={`/getaJob/${item.id}`} className="redlink">Apply Now
-                          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_26_12)">
-                              <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_26_12">
-                                <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </Link>
-                      </td>
-                    </tr>
-                  )
-                })
-              }
-            </tbody>
-          </table>
+          <div className="commonTableWrapper">
+            <table className='commonTable mt-60'>
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Location</th>
+                  <th>Experience</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  jobs.map((item, index) => {
+                    return (
+                      <tr key={index}>
+                        <td>{item.position}</td>
+                        <td>{item.location}</td>
+                        <td>{item.required_exp}</td>
+                        <td>
+                          <Link to={`/getaJob/${item.id}`} className="redlink">Apply Now
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_26_12)">
+                                <path d="M16.3384 10.3041L7.73138 18.9111L6.31738 17.4971L14.9234 8.89014H7.33838V6.89014H18.3384V17.8901H16.3384V10.3041Z" fill="#FF364C" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_26_12">
+                                  <rect width="24" height="24" fill="white" transform="translate(0.333984 0.890137)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </Link>
+                        </td>
+                      </tr>
+                    )
+                  })
+                }
+              </tbody>
+            </table>
+          </div>
+
           <div className='flexBox justify-center'>
             <Link to="/jobOpening"><Button className={'mt-30 HeroButton'} name={'View All'} /></Link>
           </div>

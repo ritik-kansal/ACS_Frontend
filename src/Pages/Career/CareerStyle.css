@@ -140,3 +140,18 @@
   height: 58px;
   width: 100%;
 }
+
+
+@media (max-width: 767px) {
+  .searchBoxWrap{
+    gap: 10px;
+  }
+  .searchBoxWrap > div, .searchBoxWrap select{
+    width: calc(25% - 8px);
+  }
+  .searchBox input, 
+  .searchBoxWrap select{
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
