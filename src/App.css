@@ -84,6 +84,11 @@ main.clearAll {
 }
 
 @media (max-width: 414px) {
+  .container.contact .bottomLevelFooter{
+    margin-top: 0;
+    padding-top: 580px;
+  }
   main{
+    background: #313131 !important; 
   }
 }

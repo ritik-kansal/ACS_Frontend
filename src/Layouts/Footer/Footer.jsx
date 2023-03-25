@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 import Textarea from '../../Components/Textarea/Textarea';
@@ -176,13 +177,53 @@ const Footer = () => {
                 </div>
 
                 <div className="bottomLevelFooter flexBox">
-                    <span className="footerLogo"><img src="/assets/svg/logo.svg" alt="" /></span>
-                    <div className="footerList flexBox">
-                        <a href="">About us</a>
-                        <a href="">Certifications</a>
-                        <a href="">Services</a>
-                        <a href="">Job Openings</a>
+
+                    <div className="footerLinkWrap flexBox">
+
+                    <h4 className="footerHeadingLow">Services</h4>
+
+                    <Link className='footerLink' to="/services/ETS">Enterprise Technology Services</Link>
+                    <Link className='footerLink' to="/services/BPS">Business Process Services</Link>
+                    <Link className='footerLink' to="/services/Infra">Infrastructure Management Services</Link>
+                    <Link className='footerLink' to="/services/Cloud">Cloud Management Services</Link>
+                    <Link className='footerLink' to="/services/StaffAugmentation">Staff Augmentation</Link>
+                    <Link className='footerLink' to="/services/ERP">ERP/SAP Services</Link>
                     </div>
+
+                    <div className="footerLinkWrap flexBox">
+
+                    <h4 className="footerHeadingLow">Government</h4>
+
+                    <Link className='footerLink' to="/governmentCertification">Government Certificates</Link>
+                    <Link className='footerLink' to="/governmentExperience">Government Placments</Link>
+                    <Link className='footerLink' to="/governmentPlacement">Government Experiences</Link>
+                    </div>
+
+                    <div className="footerLinkWrap flexBox">
+
+                    <h4 className="footerHeadingLow">Opportunities</h4>
+
+                    <Link className='footerLink' to="/jobOpening">Current Job Openings</Link>
+                    <Link className='footerLink' to="/talentCommunity">Talent Community</Link>
+                    <Link className='footerLink' to="/partner">Partners</Link>
+                    </div>
+
+                    <div className="footerLinkWrap flexBox">
+
+                    <h4 className="footerHeadingLow">Insights</h4>
+
+                    <Link className='footerLink' to="/news">News </Link>
+                    <Link className='footerLink' to="/awards">Awards</Link>
+                    </div>
+
+                    <div className="footerLinkWrap flexBox">
+
+                    <h4 className="footerHeadingLow">Contact</h4>
+
+                    <Link className='footerLink' to="/about">About US</Link>
+                    {/* <Link className='footerLink' to="/services/ETS">Testimonials</Link> */} {/*no link for this*/}
+                    </div>
+                    
                 </div>
 
                 <div className="footerSocial flexBox">
