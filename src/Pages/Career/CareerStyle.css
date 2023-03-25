@@ -154,4 +154,50 @@
     font-size: 14px;
     line-height: 120%;
   }
+  .multiLevelFormWrap .heading-4{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+  .multiLevelFormWrap .talentForm{
+    width: 100%;
+  }
+  .multiLevelFormWrap form{
+    padding: 24px 22px;
+  }
+  .formGroup input{
+    font-size: 12px;
+    line-height: 120%;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .multiLevelFormWrap form{
+    gap: 10px;
+  }
+  .btnWraperCenter button{
+    width: 100%;
+    min-width: 100%;
+  }
+  .partner-select select{
+    font-size: 12px;
+    line-height: 120%;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .partner-select{
+    max-width: 100%;
+  }
+  .multiLevelFormWrap .sameDesignTextArea{
+    margin-top: 0 !important;
+    font-size: 12px;
+    line-height: 120%;
+    border-radius: 5px;
+  }
+  .heading-3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+  }
 }

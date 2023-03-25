@@ -47,12 +47,12 @@ const Header = ({ page }) => {
                             </svg></a>
                             <div className={`dropdown ${showMenu === 1 ? 'active' : ''}`}>
 
-                                <Link to="/services/ETS">Enterprise Technology Services</Link>
-                                <Link to="/services/BPS">Business Process Services</Link>
-                                <Link to="/services/Infra">Infrastructure Management Services</Link>
-                                <Link to="/services/Cloud">Cloud Management Services</Link>
-                                <Link to="/services/StaffAugmentation">Staff Augmentation services</Link>
-                                <Link to="/services/ERP">ERP/SAP Services</Link>
+                                <Link onClick={()=> setActive(!active)} to="/services/ETS">Enterprise Technology Services</Link>
+                                <Link onClick={()=> setActive(!active)} to="/services/BPS">Business Process Services</Link>
+                                <Link onClick={()=> setActive(!active)} to="/services/Infra">Infrastructure Management Services</Link>
+                                <Link onClick={()=> setActive(!active)} to="/services/Cloud">Cloud Management Services</Link>
+                                <Link onClick={()=> setActive(!active)} to="/services/StaffAugmentation">Staff Augmentation services</Link>
+                                <Link onClick={()=> setActive(!active)} to="/services/ERP">ERP/SAP Services</Link>
 
                             </div>
                         </li>
