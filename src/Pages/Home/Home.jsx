@@ -135,7 +135,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="testimonila">
+      <section className="testimonila"> 
         <div className="container">
 
           <div className="topDetails">
