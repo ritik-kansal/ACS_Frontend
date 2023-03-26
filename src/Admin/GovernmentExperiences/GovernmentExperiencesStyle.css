@@ -39,10 +39,12 @@
 @media (max-width: 767px) {
     .flexBox.x4Wrapper{
         margin-top: 12px !important;
+        gap: 10px !important;
     }
     .x4Wrapper .boxBusiness{
-        max-width: 100% !important;
+        max-width: calc(25% - 10px) !important;
         width: 100%;
+        line-height: 0 !important;
     }
     .flexBox.x5Wrapper{
         margin-top: 12px !important;

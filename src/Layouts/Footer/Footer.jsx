@@ -42,7 +42,7 @@ const Footer = () => {
     const location = useLocation();
 
     return (
-        <footer>
+        <footer className={`${location.pathname === '/news' || location.pathname === '/awards' ? 'noContactFooter' : ''}`}>
             <div className={`container ${location.pathname === '/contact' ? 'contact' : ''}`}>
 
                 <div className="topLevelFooter flexBox">

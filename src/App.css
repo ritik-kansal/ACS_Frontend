@@ -91,4 +91,7 @@ main.clearAll {
   main{
     background: #313131 !important; 
   }
+  main.removePadding{
+    padding-bottom: 0;
+  }
 }

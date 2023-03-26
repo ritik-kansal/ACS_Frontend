@@ -28,3 +28,10 @@
     position: relative;
     display: block;
 }
+
+@media screen {
+    .awardsArticleWrap:last-child{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

@@ -96,7 +96,7 @@ header {
   display: none;
 }
 
-@media (max-width: 414px){
+@media (max-width: 767px){
   header{
     background: rgba(98, 98, 98, 0.8);
     position: static;

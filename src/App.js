@@ -35,7 +35,7 @@ function App() {
     <>
       <ScrollToTop />
       <div className="appContainer">
-        <main className={location.pathname === "/contact" ? "bg_black" : ""}>
+        <main className={(location.pathname === "/contact" ? "bg_black" : "" , location.pathname === "/awards" || location.pathname === "/news" ? "removePadding" : "")}>
           {isAuthenticated && (
             <Routes>
               <Route exact path="/admin-govermentExperiences" element={<GovernmentExperiences />} />

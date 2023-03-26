@@ -53,3 +53,10 @@
 .placementWrapper .text-2{
     color: #fff;
 }
+
+@media (max-width: 767px) {
+    .x4Wrapper .boxBusiness .text-3,
+    .x5Wrapper .boxBusiness .text-3{
+        display: none;
+    }
+}

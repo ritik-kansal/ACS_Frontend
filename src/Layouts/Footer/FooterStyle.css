@@ -139,4 +139,13 @@ footer {
     justify-content: center;
     gap: 25px;
   }
+  .flexBox.bottomLevelFooter{
+    padding-top: 420px;
+  }
+  .noContactFooter .topLevelFooter{
+    display: none;
+  }
+  .noContactFooter .bottomLevelFooter{
+    padding-top: 40px;
+  }
 }
