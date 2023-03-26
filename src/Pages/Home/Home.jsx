@@ -229,7 +229,7 @@ const Home = () => {
           </div>
 
           <div className="commonTableWrapper">
-            <table className='commonTable mt-60'>
+            <table className='commonTable responsiveTable mt-60'>
               <thead>
                 <tr>
                   <th>Position</th>
