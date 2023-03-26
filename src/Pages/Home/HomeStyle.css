@@ -74,7 +74,7 @@ section {
 }
 
 .gradientBG {
-  background: linear-gradient(180deg, #000000 0%, #757575 100%);
+  background: #313131;
 }
 
 .topDetails {
@@ -84,7 +84,7 @@ section {
 
 .commonHeading {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 130%;
 }
 
@@ -123,7 +123,7 @@ section {
 
 .heading-2 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 120%;
 }
 
@@ -195,7 +195,7 @@ section {
 
 .testminoal {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
 }
 

@@ -14,7 +14,7 @@
 .newsArticle{
     color: #FF364C;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 150%;
     padding-left: 40px;
     position: relative;
@@ -34,7 +34,7 @@
 
 .newsDetail{
     font-weight: 400;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 150%;
     color: #FFFFFF;
     position: relative;

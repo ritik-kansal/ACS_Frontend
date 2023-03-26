@@ -16,10 +16,8 @@
 
 .x4Wrapper .boxBusiness{
     max-width: calc(25% - 20px);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
     color: #fff;
+    line-height: 0;
     text-align: center;
     background: #444444;
     border-radius: 8px;
@@ -48,15 +46,9 @@
 .x5Wrapper .boxBusiness .text-3{
     padding: 8px 12px;
     padding-top: 0;
+    display: none;
 }
 
 .placementWrapper .text-2{
     color: #fff;
-}
-
-@media (max-width: 767px) {
-    .x4Wrapper .boxBusiness .text-3,
-    .x5Wrapper .boxBusiness .text-3{
-        display: none;
-    }
 }
