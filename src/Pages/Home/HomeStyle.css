@@ -190,7 +190,32 @@ section {
 }
 
 .swiperBox .swiper {
-  padding: 0 100px !important;
+  max-width: 1040px;
+  cursor: pointer;
+}
+
+.swiper-pagination{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  height: 10px;
+  width: 100%;
+}
+
+.swiper-pagination-bullet{
+  min-width: 8px;
+  min-height: 8px;
+  position: relative;
+  display: block;
+  background: #6A6A6A;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active{
+  background: #FF364C;
 }
 
 .testminoal {
@@ -285,6 +310,10 @@ section {
 
 @media (max-width: 767px){
 
+  .swiper-pagination{
+    display: flex;
+  }
+
   .siderText{
     position: absolute;
     bottom: 0;
@@ -330,7 +359,6 @@ section {
 
   .servciceBox{
     max-width: 100%;
-    background: linear-gradient(180deg, #919191 0%, #323232 100%);
   }
 
   .commonHeading{

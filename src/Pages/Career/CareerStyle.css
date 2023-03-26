@@ -38,7 +38,7 @@
 
 .heading-3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 140%;
 }
 
@@ -87,7 +87,7 @@
 
 .heading-4 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 150%;
 }
 
@@ -108,7 +108,7 @@
 
 .partnerWrapper .servciceBox {
   min-height: 245px;
-  align-content: flex-start;
+  align-content: center;
 }
 
 .partner-select {
@@ -147,13 +147,22 @@
     gap: 10px;
   }
   .searchBoxWrap > div, .searchBoxWrap select{
-    width: calc(25% - 8px);
+    width: 100%;
   }
   .searchBox input, 
   .searchBoxWrap select{
     font-size: 14px;
     line-height: 120%;
   }
+
+  .searchBoxWrap select{
+    display: none;
+  }
+
+  .resHide{
+    display: none;
+  }
+
   .multiLevelFormWrap .heading-4{
     font-weight: 400;
     font-size: 14px;
@@ -200,4 +209,10 @@
     line-height: 130%;
     text-align: center;
   }
+  
+  .responsiveTable th:nth-child(3),
+  .responsiveTable td:nth-child(3){
+      display: none;
+  }
+  
 }

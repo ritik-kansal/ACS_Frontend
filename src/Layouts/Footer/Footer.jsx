@@ -218,9 +218,9 @@ const Footer = () => {
 
                     <div className="footerLinkWrap flexBox">
 
-                    <h4 className="footerHeadingLow">Contact</h4>
-
-                    <Link className='footerLink' to="/about">About US</Link>
+                    <Link className='footerHeadingLow footerLinkHeading' to="/contact">Contact</Link>
+                    <Link className='footerHeadingLow footerLinkHeading' to="/about">About US</Link>
+                    <Link className='footerHeadingLow footerLinkHeading' to="">Testimonials</Link> {/*no link for this*/}
                     {/* <Link className='footerLink' to="/services/ETS">Testimonials</Link> */} {/*no link for this*/}
                     </div>
                     

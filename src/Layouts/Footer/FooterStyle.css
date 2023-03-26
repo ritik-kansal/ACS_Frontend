@@ -128,6 +128,16 @@ footer {
   margin-top: 10px;
 }
 
+.footerLinkHeading{
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footerLinkHeading:last-child{
+  margin-bottom: 0;
+}
+
 @media (max-width: 767px) {
   .footerLinkWrap{
     max-width: 100%;

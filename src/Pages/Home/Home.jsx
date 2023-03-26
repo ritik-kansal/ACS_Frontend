@@ -147,9 +147,6 @@ const Home = () => {
             <Swiper
               className='container'
               breakpoints={{
-                414: {
-                  slidesPerView: 1,
-                },
                 768: {
                   slidesPerView: 1,
                 },
@@ -159,7 +156,8 @@ const Home = () => {
               }}
               spaceBetween={30}
               slidesPerView={1}
-              pagination={true} modules={[Pagination]}
+              navigation={true}
+              pagination={true} modules={[Pagination,Navigation]}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}>
 
@@ -181,6 +179,19 @@ const Home = () => {
                   <p className="testminoal">"Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor."</p>
                   <div className="testimonialBox mt-40">
                     <img src="./assets/img/p2.png" alt="" className="testimonialimg" />
+                    <span className="testimonialDetail">
+                      <h5 className="testiName">Albus Dumbledore</h5>
+                      <span className="textTesti">Manager @ Howarts</span>
+                    </span>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="testimonialsBox">
+                  <p className="testminoal">"Release facebook responsive web design business model canvas seed money monetization."</p>
+                  <div className="testimonialBox mt-40">
+                    <img src="./assets/img/p3.png" alt="" className="testimonialimg" />
                     <span className="testimonialDetail">
                       <h5 className="testiName">Albus Dumbledore</h5>
                       <span className="textTesti">Manager @ Howarts</span>

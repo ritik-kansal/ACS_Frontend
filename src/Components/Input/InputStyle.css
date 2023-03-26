@@ -1,3 +1,7 @@
+.formGroup{
+  position: relative;
+}
+
 .formGroup input {
   font-weight: 400;
   font-size: 18px;
@@ -8,6 +12,7 @@
   background: #f3f3f3;
   border: none;
   border-radius: 12px;
+  position: relative;
 }
 
 .formGroup input:focus,
@@ -20,4 +25,17 @@
   font-size: 18px;
   line-height: 32px;
   color: #444444;
+}
+
+.formGroup.searchBoxIcon::after{
+  content: '';
+  position: absolute;
+  background: url('/public/assets/svg/search.svg');
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
