@@ -98,7 +98,9 @@ const GetJob = () => {
                                 <Input required={true} className={'mt-30'} type={'text'} placeholder={'Name'} value={applicant.full_name} onChange={(e) => setApplicant({ ...applicant, full_name: e.target.value })} />
                                 <Input required={true} className={'mt-20'} type={'email'} placeholder={'Email Address'} value={applicant.email} onChange={(e) => setApplicant({ ...applicant, email: e.target.value })} />
                                 <Input required={true} className={'mt-20'} type={'text'} placeholder={'Phone Number'} value={applicant.phone_number} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setApplicant({ ...applicant, phone_number: e.target.value }) } }} />
-                                <Input required={true} className={'mt-20'} type={'text'} placeholder={'Cover Letter'} value={applicant.cover_letter} onChange={(e) => setApplicant({ ...applicant, cover_letter: e.target.value })} />
+                                <textarea className='sameDesignTextArea mt-20' name="" id="" cols="10" rows="10" required={true} placeholder={'Cover Letter'} value={applicant.cover_letter} onChange={(e) => setApplicant({ ...applicant, cover_letter: e.target.value })}>
+                                </textarea>
+                                {/* <Input required={true} className={'mt-20'} type={'text'} placeholder={'Cover Letter'} value={applicant.cover_letter} onChange={(e) => setApplicant({ ...applicant, cover_letter: e.target.value })} /> */}
                                 <Input required={true} className={'mt-20'} type={'file'} placeholder={'Upload CV'} value={fileValue} onChange={(e) => handleFileChange(e)} accept={"application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"} />
                                 <Button className={'HeroButton mt-20'} name={'Submit'} />
 

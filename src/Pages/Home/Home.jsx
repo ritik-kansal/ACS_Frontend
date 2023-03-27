@@ -223,8 +223,8 @@ const Home = () => {
         <div className="container">
 
           <div className="topDetails">
-            <h1 className="commonHeading">Job Openings</h1>
-            <p className="commonText">Our mission is to help you find the right job to reach your professional and lifestyle goals. We offer an ever-changing <br />
+            <h1 className="commonHeading jobHeading">Job Openings</h1>
+            <p className="commonText jobText">Our mission is to help you find the right job to reach your professional and lifestyle goals. We offer an ever-changing <br />
               range of exciting opportunities for top-notch professionals.</p>
           </div>
 

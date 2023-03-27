@@ -139,6 +139,18 @@ footer {
   margin-bottom: 0;
 }
 
+.hideitnow{
+  padding-top: 20px;
+}
+
+.hideitnow .topLevelFooter{
+  display: none;
+}
+
+.lessSpacingFooter{
+  padding-top: 170px;
+}
+
 @media (max-width: 767px) {
   .footerLinkWrap{
     max-width: 100%;

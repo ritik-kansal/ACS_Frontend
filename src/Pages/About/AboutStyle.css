@@ -29,3 +29,7 @@
     min-height: 396px;
     align-content: flex-start;
 }
+
+.solidCard{
+    background: #444444;
+}

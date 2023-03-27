@@ -48,9 +48,10 @@
     }
     .flexBox.x5Wrapper{
         margin-top: 12px !important;
+        gap: 10px !important;
     }
     .x5Wrapper .boxBusiness{
-        max-width: 100% !important;
+        max-width: calc(25% - 8px) !important;
         width: 100%;
     }
 }

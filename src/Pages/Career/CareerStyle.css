@@ -25,9 +25,13 @@
   color: #fff;
 }
 
+.searchBoxWrap > div:first-child{
+  width: calc(40% - 10px);
+}
+
 .searchBoxWrap > div,
 .searchBoxWrap select {
-  width: calc(25% - 14px);
+  width: calc(20% - 14px);
 }
 
 .flexBox.formDetailWrap {
@@ -215,4 +219,19 @@
       display: none;
   }
   
+}
+
+.formLeft .heading-3{
+  font-size: 24px;
+  line-height: 140%;
+}
+
+
+.formLeft .text-3{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.partnerWrapper .heading-3{
+  font-weight: 400;
 }

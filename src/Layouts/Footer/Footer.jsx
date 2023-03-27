@@ -42,10 +42,10 @@ const Footer = () => {
     const location = useLocation();
 
     return (
-        <footer className={`${location.pathname === '/news' || location.pathname === '/awards' ? 'noContactFooter' : ''}`}>
+        <footer className={(location.pathname === '/news' || location.pathname === '/awards' ? 'noContactFooter' : '' ||  location.pathname === '/talentCommunity' || location.pathname === '/partner' ? 'hideitnow' : '' || location.pathname === '/contact' ? 'lessSpacingFooter' : '' )}>
             <div className={`container ${location.pathname === '/contact' ? 'contact' : ''}`}>
 
-                <div className="topLevelFooter flexBox">
+                <div className={`topLevelFooter flexBox`}>
 
                     <div className="topLevelLeft">
                         <h2 className="footerHeading">Get in Touch</h2>
@@ -104,6 +104,9 @@ const Footer = () => {
                                 <Input className={'mt-20'} type={'text'} placeholder={'Name'} value={getInTouch.name} onChange={(e) => setGetInTouch({ ...getInTouch, name: e.target.value })} />
                                 <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} value={getInTouch.email} onChange={(e) => setGetInTouch({ ...getInTouch, email: e.target.value })} />
                                 <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} value={getInTouch.phone} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setGetInTouch({ ...getInTouch, phone: e.target.value }) } }} />
+                                <textarea className='sameDesignTextArea mt-20' placeholder='Description' name="" id="" cols="10" rows="10"
+                                    
+                                ></textarea>
                                 <Button className={'HeroButton mt-20'} name={'Submit'} />
                                 {
                                     msgSent == true && <div className="msgSent">Message Sent</div>

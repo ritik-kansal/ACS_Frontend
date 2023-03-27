@@ -15,7 +15,7 @@
 }
 
 .x4Wrapper .boxBusiness{
-    max-width: calc(25% - 20px);
+    max-width: calc(16.6% - 16px);
     color: #fff;
     line-height: 0;
     text-align: center;
@@ -28,7 +28,7 @@
     max-width: calc(20% - 20px);
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 0;
     color: #fff;
     text-align: center;
     background: #444444;
