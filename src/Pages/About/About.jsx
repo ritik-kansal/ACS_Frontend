@@ -22,15 +22,13 @@ const About = () => {
 
                         <div className="aboutRight">
                             <h2 className="heading-2">
-                                Who we are
+                                About Us
                             </h2>
-                            <p className="text-2 mt-15">When working on her Master’s thesis on a paratransit software syststem, Asha Ramrahkiani
-                                realized the potential of technology to transform people’s lives, and was inspired to found ACS in 2011. The mission
-                                of ACS is to work with our partners in New York State on IT related projects and to fulfill all of their IT needs as
-                                effectively as possible.</p>
-                            <p className="text-2 mt-15">ACS strives to improve life for communities across New York state by modernizing government
-                                systems. ACS doesn’t just look to get the job done - we aim to exceed our client’s expectations.</p>
-                            <Link to='/contact'><Button className={'HeroButton mt-40'} name={'Get in Touch'} /></Link>
+                            <p className="text-2 mt-15">ACS Consultancy Services Inc. (ACS) is a New York-based consulting firm that specializes in providing technology solutions. The company, which was established in 2011, has received several certifications, including Minority Business Enterprise, Woman Business Enterprise, WOSB, 8a, and NYS/NYC Women Owned (NYS WBE). The founder and President of ACS, Asha Ramrakhiani, has over 20 years of leadership experience working with various New York State agencies.</p>
+                            <p className="text-2 mt-15">Leveraging the extensive experience of its leadership team in working with the US Government, ACS offers IT consulting and project-based services to state and federal agencies. The company has been recognized by the Center for Digital Government for its exceptional experience in collaborating with government agencies, having received the "Best Application Serving a department or Agency's Business Needs" award in the Project Excellence category as part of the Best of New York Awards.</p>
+                            <p className="text-2 mt-15">ACS provides IT consulting and staff augmentation services to more than 50 clients in the state of New York, connecting them with over 100 local technology professionals with expertise in the latest technologies. The company focuses on providing best-in-class certified local talent for information technology job categories, providing extended local support to ensure that NYS clients receive relevant consulting services without the need for redundant recruitment stages.</p>
+                            <p className="text-2 mt-15">ACS is committed to delivering professional consulting support on strategic initiatives and optimal technology solutions to local, state, and commercial customers. The company takes pride in delivering quality services that exceed customer expectations and drive business success. With its strong leadership team and commitment to excellence, ACS has established itself as a leader in the IT consulting industry and is rapidly expanding.</p>
+                            {/* <Link to='/contact'><Button className={'HeroButton mt-40'} name={'Get in Touch'} /></Link> */}
                         </div>
                     </div>
                 </div>

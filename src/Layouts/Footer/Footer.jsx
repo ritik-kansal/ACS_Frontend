@@ -52,7 +52,7 @@ const Footer = () => {
                         <p className="footerText mt-10">If you have any comments, suggestions or questions, please do not hesitate to contact us.
                             Our high-quality office staff will help you and answer all your questions.</p>
 
-                        <div className="mob-hide">
+                        <div className="mob-hide mt-180">
                         
                             <div className="listBox mt-30">
                                 <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +119,7 @@ const Footer = () => {
                                 <Input className={'mt-20'} type={'text'} placeholder={'Name'} value={getInTouch.name} onChange={(e) => setGetInTouch({ ...getInTouch, name: e.target.value })} />
                                 <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} value={getInTouch.email} onChange={(e) => setGetInTouch({ ...getInTouch, email: e.target.value })} />
                                 <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} value={getInTouch.phone} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setGetInTouch({ ...getInTouch, phone: e.target.value }) } }} />
-                                <Input className={'mt-20'} type={'text'} placeholder={'Query'} value={getInTouch.query} onChange={(e) => setGetInTouch({ ...getInTouch, query: e.target.value })} />
+                                {/* <Input className={'mt-20'} type={'text'} placeholder={'Query'} value={getInTouch.query} onChange={(e) => setGetInTouch({ ...getInTouch, query: e.target.value })} /> */}
                                 <textarea className='sameDesignTextArea mt-20' placeholder='Description' name="" id="" cols="10" rows="10"
                                     onChange={(e) => setGetInTouch({ ...getInTouch, message: e.target.value })} value={getInTouch.message}
                                 ></textarea>

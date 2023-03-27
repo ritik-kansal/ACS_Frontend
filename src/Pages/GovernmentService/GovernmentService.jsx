@@ -22,7 +22,7 @@ const GovernmentService = () => {
 
                     <h2 className="redHeading mt-50">ACS’s Business Certificates</h2>
 
-                    <div className="x4Wrapper flexBox mt-40">
+                    <div className="x4Wrapper flexBox mt-30">
 
                         <div className="boxBusiness">
                             <img src="./assets/img/c1.png" alt="" />
