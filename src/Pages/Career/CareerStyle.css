@@ -25,6 +25,10 @@
   color: #fff;
 }
 
+.searchBoxWrap input::placeholder{
+  font-size: 18px;
+}
+
 .searchBoxWrap > div:first-child{
   width: calc(40% - 10px);
 }
@@ -151,7 +155,7 @@
     gap: 10px;
   }
   .searchBoxWrap > div, .searchBoxWrap select{
-    width: 100%;
+    width: 100% !important; 
   }
   .searchBox input, 
   .searchBoxWrap select{
