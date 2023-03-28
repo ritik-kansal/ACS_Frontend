@@ -269,6 +269,10 @@
     font-size: 14px;
   }
 
+  .talentFormFix .talentForm input::placeholder{
+    font-size: 12px;
+  }
+
 }
 
   
