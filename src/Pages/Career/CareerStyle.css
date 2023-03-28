@@ -240,7 +240,35 @@
     padding-bottom: 40px !important;
   }
   
+  .flexBox.formDetailWrap{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
   
+  .flexBox.formDetailWrap .formLeft{
+    width: 100%;
+  }
+
+  .flexBox.formDetailWrap .formLeft .heading-3{
+    text-align: left;
+  }
+
+  .flexBox.formDetailWrap .formRight .whiteForm{
+    padding: 20px;
+  }
+
+  .sameDesignTextArea::placeholder{
+    font-size: 13px;
+  }
+
+  .formDetailWrap .formLeft .text-3{
+    font-size: 12px;
+  }
+
+  .formDetailWrap .formLeft .text-3 strong{
+    font-size: 14px;
+  }
+
 }
 
   
