@@ -31,6 +31,9 @@ const News = () => {
                         <span className="newsDetail mt-10">ACS is providing IT staff augmentation services to the DMV. We placed two (2) highly qualified & certified Project Managers two (2) ColdFusion Developers, one (1) Tester, and one Expert Programmer required by the DMV. We have matched the requirement and provided the resumes of qualified candidates at a possible low cost. For these roles, our experienced SMEs (20+ years of experience) of similar skill sets interacted with candidates to evaluate various technical parameters. This process ensured that candidates are technically fit and had relevant experience/skills as per the job requirement.</span>
                     </div>
 
+                    <div className="newsArticleWrap">
+                        <span className="newsDetail mt-10">ACS is providing IT staff augmentation services to the OGS and placed one (1) certified and skilled Java Developer. Our consultant is still working with the OGS and performing well. Team ACS has performed a reference and background check of the candidate before submitting resume to the OGS. Team ACS's retention rate is so high as per industry standards</span>
+                    </div>
 
 
                 </div>
