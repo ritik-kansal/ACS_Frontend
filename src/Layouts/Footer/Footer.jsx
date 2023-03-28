@@ -41,8 +41,9 @@ const Footer = () => {
 
     const location = useLocation();
 
-    return (
-        <footer className={(location.pathname === '/news' || location.pathname === '/awards' ? 'noContactFooter' : '' ||  location.pathname === '/talentCommunity' || location.pathname === '/partner' ? 'hideitnow' : '' || location.pathname === '/contact' ? 'lessSpacingFooter' : '' )}>
+    return ( 
+        // location.pathname === '/news' || location.pathname === '/awards' ? 'noContactFooter' : '' ||
+        <footer className={(location.pathname === '/talentCommunity' || location.pathname === '/partner' ? 'hideitnow' : '' || location.pathname === '/contact' ? 'lessSpacingFooter' : '' )}>
             <div className={`container ${location.pathname === '/contact' ? 'contact' : ''}`}>
 
                 <div className={`topLevelFooter flexBox`}>

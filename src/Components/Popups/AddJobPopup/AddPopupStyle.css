@@ -27,3 +27,13 @@
 .sameDesignTextArea::placeholder{
   font-size: 16px;
 }
+
+footer .sameDesignTextArea::placeholder{
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  footer .sameDesignTextArea::placeholder{
+    font-size: 13px;
+  }
+}

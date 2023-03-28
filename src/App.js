@@ -35,7 +35,8 @@ function App() {
     <>
       <ScrollToTop />
       <div className="appContainer">
-        <main className={(location.pathname === "/contact" ? "bg_black" : "" || location.pathname === "/awards" || location.pathname === "/news"  ? "removePadding" : "" || location.pathname === '/talentCommunity' || location.pathname === '/partner' ? 'excesPaddingWeb' : '')}>
+        {/* location.pathname === "/awards" || location.pathname === "/news"  ? "removePadding" : "" || */}
+        <main className={(location.pathname === "/contact" ? "bg_black" : "" || location.pathname === '/talentCommunity' || location.pathname === '/partner' ? 'excesPaddingWeb' : '')}>
           {isAuthenticated && (
             <Routes>
               <Route exact path="/admin-govermentExperiences" element={<GovernmentExperiences />} />
