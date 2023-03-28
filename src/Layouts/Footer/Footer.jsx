@@ -105,7 +105,7 @@ const Footer = () => {
                                 <Input className={'mt-20'} type={'text'} placeholder={'Name'} value={getInTouch.name} onChange={(e) => setGetInTouch({ ...getInTouch, name: e.target.value })} />
                                 <Input className={'mt-20'} type={'email'} placeholder={'Email Address'} value={getInTouch.email} onChange={(e) => setGetInTouch({ ...getInTouch, email: e.target.value })} />
                                 <Input className={'mt-20'} type={'text'} placeholder={'Phone Number'} value={getInTouch.phone} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setGetInTouch({ ...getInTouch, phone: e.target.value }) } }} />
-                                <textarea className='sameDesignTextArea mt-20' placeholder='Description' name="" id="" cols="10" rows="10"
+                                <textarea className='sameDesignTextArea mt-20' placeholder='Description' name="" id=""
                                     
                                 ></textarea>
                                 <Button className={'HeroButton mt-20'} name={'Submit'} />

@@ -177,3 +177,7 @@ footer {
     padding-top: 40px;
   }
 }
+
+footer .sameDesignTextArea{
+  height: 80px;
+}
