@@ -147,6 +147,7 @@
   border-radius: 12px;
   height: 58px;
   width: 100%;
+  font-size: 16px;
 }
 
 
@@ -169,6 +170,10 @@
 
   .resHide{
     display: none;
+  }
+
+  .multiLevelFormWrap::placeholder{
+    font-size: 16px;
   }
 
   .multiLevelFormWrap .heading-4{
@@ -242,4 +247,10 @@
 
 .partnerWrapper .heading-3{
   font-weight: 400;
+}
+
+.newHeading-3{
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
 }
