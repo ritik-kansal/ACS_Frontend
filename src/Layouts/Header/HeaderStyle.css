@@ -6,7 +6,8 @@ header {
   background: rgba(98, 98, 98, 0.3);
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 999 !important;
+  position: relative !important;
   width: 100%;
   backdrop-filter: blur(10px);
 }
@@ -132,4 +133,9 @@ header {
     border-radius: 0;
   }
 
+}
+
+::placeholder{
+  font-size: 12px;
+  line-height: 120%;
 }
