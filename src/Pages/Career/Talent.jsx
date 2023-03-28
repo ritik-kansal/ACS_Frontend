@@ -77,7 +77,11 @@ const Talent = () => {
                             <Input className={'talentForm'} type={'text'} placeholder={'Phone Number'} value={talent.phone} onChange={(e) => { if (e.target.value === '' || /^[0-9\b]+$/.test(e.target.value)) { setTalent({ ...talent, phone: e.target.value }) } }} />
                             <Input className={'talentForm'} type={'text'} placeholder={'Current Employee'} value={talent.current_employee} onChange={(e) => setTalent({ ...talent, current_employee: e.target.value })} />
                             <Input className={'talentForm'} type={'text'} placeholder={'Current Designation'} value={talent.current_designation} onChange={(e) => setTalent({ ...talent, current_designation: e.target.value })} />
-
+                            <div className="formGroup talentForm partner-select">
+                                <select required={true} id="options1" name="options1" className="selectBox">
+                                    <option value='city'>Area of Intrest</option>
+                                </select>
+                            </div>
                             <Input className={'talentForm'} type={'file'} placeholder={'Upload Resume'} value={fileValue} onChange={handleFileChange} accept={"application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"} />
                             <div className="btnWraperCenter">
                                 <Button type="submit" className={'HeroButton mt-20'} name={'Submit'} />
