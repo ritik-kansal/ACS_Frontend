@@ -7,8 +7,16 @@
     margin-bottom: 30px;
 }
 
+.newsArticleWrap:last-child{
+    margin-bottom: 0;
+}
+
 .newsArticleWrap:not(:last-child){
     border-bottom: 1px solid #999;
+}
+
+.newsWrapper{
+    padding-bottom: 0;
 }
 
 .newsArticle{
