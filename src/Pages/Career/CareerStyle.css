@@ -308,3 +308,11 @@
 .multiLevelFormWrap{
   padding-bottom: 0;
 }
+
+.getJobContact .formGroup input::placeholder{
+  font-size: 16px;
+}
+
+.getJobContact .formGroup .sameDesignTextArea::placeholder{
+  font-size: 16px;
+}

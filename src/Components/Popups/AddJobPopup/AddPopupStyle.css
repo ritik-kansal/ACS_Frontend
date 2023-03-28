@@ -39,5 +39,6 @@ footer .sameDesignTextArea::placeholder{
   .jobsPopup select,
   .sameDesignTextArea {
     font-size: 12px;
+    height: 105px;
   }
 }

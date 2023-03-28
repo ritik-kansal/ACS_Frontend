@@ -93,7 +93,7 @@ const GetJob = () => {
 
                         </div>
                         <div className="formRight">
-                            <form onSubmit={onSave} className='whiteForm contactForm'>
+                            <form onSubmit={onSave} className='whiteForm contactForm getJobContact'>
                                 <h3 className="formHeading">Apply Here</h3>
                                 <Input required={true} className={'mt-30'} type={'text'} placeholder={'Name'} value={applicant.full_name} onChange={(e) => setApplicant({ ...applicant, full_name: e.target.value })} />
                                 <Input required={true} className={'mt-20'} type={'email'} placeholder={'Email Address'} value={applicant.email} onChange={(e) => setApplicant({ ...applicant, email: e.target.value })} />
