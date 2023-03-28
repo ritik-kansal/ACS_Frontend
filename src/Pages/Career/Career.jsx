@@ -61,7 +61,13 @@ const Career = () => {
 
           <div className="searchBoxWrap">
             <Input className={'searchBox searchBoxIcon'} placeholder={'Search Any Position'} value={search.position} onChange={(e) => { setSearch({ ...search, position: e.target.value }) }} />
-            <Input className={'searchBox resHide'} placeholder={'Job Category'} value={search.job_category} onChange={(e) => { setSearch({ ...search, job_category: e.target.value }) }} />
+            {/* <Input className={'searchBox resHide'} placeholder={'Job Category'} value={search.job_category} onChange={(e) => { setSearch({ ...search, job_category: e.target.value }) }} /> */}
+
+            <select id="optionsNew" >
+              <option value="">All Job Category</option>
+              <option value="">All Job Category</option>
+              <option value="">All Job Category</option>
+            </select>
 
             <select id="options2" value={search.job_type} onChange={(e) => { setSearch({ ...search, job_type: e.target.value }) }}>
               <option value="">All Job Type</option>
