@@ -86,10 +86,10 @@ const GetJob = () => {
                             <p className='text-3 mt-20'>Required Experience:</p>
                             <p className='text-3'>{job.required_exp}
                             </p>
-                            <p className="text-3 mt-20">Qualification Required: {job.qualification}</p>
-                            <p className="text-3 mt-20">Job Location: {job.location}</p>
-                            <p className="text-3 mt-20">Job Category: {job.job_category}</p>
-                            <p className="text-3 mt-20">Job Type: {job.job_type}</p>
+                            <p className="text-3 mt-20"><strong>Qualification Required:</strong> {job.qualification}</p>
+                            <p className="text-3 mt-20"><strong>Job Location:</strong> {job.location}</p>
+                            <p className="text-3 mt-20"><strong>Job Category:</strong> {job.job_category}</p>
+                            <p className="text-3 mt-20"><strong>Job Type:</strong> {job.job_type}</p>
 
                         </div>
                         <div className="formRight">
