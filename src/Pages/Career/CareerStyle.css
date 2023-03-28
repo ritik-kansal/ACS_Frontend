@@ -93,6 +93,10 @@
   width: calc(50% - 10px);
 }
 
+.multiLevelFormWrap .talentForm input::placeholder{
+  font-size: 16px;
+}
+
 .heading-4 {
   font-weight: 400;
   font-size: 18px;
