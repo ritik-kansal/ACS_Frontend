@@ -68,7 +68,7 @@ const Talent = () => {
             <div className="talentWrapper gradientBG">
                 <div className="container">
 
-                    <section className="multiLevelFormWrap">
+                    <section className="multiLevelFormWrap talentFormFix">
                         <form onSubmit={onSave} className='whiteForm'>
                             <h3 className="heading-4">Join our talent community and we will notify you about relevant positions, and keep you in mind when we have interesting opportunities</h3>
                             <Input className={'talentForm'} type={'text'} placeholder={'First Name'} value={talent.first_name} onChange={(e) => setTalent({ ...talent, first_name: e.target.value })} />

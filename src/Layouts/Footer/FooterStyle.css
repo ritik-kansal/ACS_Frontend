@@ -147,6 +147,10 @@ footer {
   display: none;
 }
 
+.hideitnow .bottomLevelFooter{
+  padding-top: 20px !important;
+}
+
 .lessSpacingFooter{
   padding-top: 170px;
 }

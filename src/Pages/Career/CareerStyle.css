@@ -231,7 +231,21 @@
   .responsiveTable td:nth-child(3){
       display: none;
   }
+
+  .talentFormFix .whiteForm{
+    margin-top: 0;
+  }
+
+  .multiLevelFormWrap.talentFormFix{
+    padding-bottom: 40px !important;
+  }
   
+  
+}
+
+  
+.talentFormFix{
+  padding-bottom: 100px !important;
 }
 
 .formLeft .heading-3{
